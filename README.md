@@ -2,7 +2,7 @@
 
 Official website repository for **Immortals Martial Arts & Fitness Academy** located in Thokkottu & Urwa, Mangaluru, Karnataka.
 
-![Immortals Academy Banner](images/logo.svg)
+![Immortals Academy Banner](images/Immortals.png)
 
 ---
 
