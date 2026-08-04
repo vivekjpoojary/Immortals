@@ -982,6 +982,13 @@
     <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
   </a>
 
+  <!-- Back To Top Floating Button -->
+  <button id="backToTop" 
+          aria-label="Back to Top" 
+          class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-panel border border-ember/40 text-ember hidden opacity-0 transition-all duration-300 items-center justify-center shadow-xl hover:bg-ember hover:text-white">
+    <i data-lucide="chevron-up" class="w-6 h-6"></i>
+  </button>
+
   <!-- Success Toast Notification -->
   <div id="toast" class="fixed top-20 right-6 z-50 transform translate-x-72 opacity-0 transition-all duration-300 max-w-sm bg-panel border border-ember rounded-xl p-4 shadow-2xl flex items-start gap-3">
     <div class="w-8 h-8 rounded-full bg-ember/20 text-ember flex items-center justify-center shrink-0 mt-0.5">
@@ -1013,16 +1020,20 @@
     // Dynamic Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // FAQ Accordion Toggle
-    document.querySelectorAll('.faq-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        const content = btn.nextElementSibling;
-        const icon = btn.querySelector('[data-lucide="chevron-down"]');
-        content.classList.toggle('hidden');
-        if (icon) {
-          icon.classList.toggle('rotate-180');
-        }
-      });
+    // Back to Top Button Logic
+    const backToTopBtn = document.getElementById('backToTop');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.remove('hidden');
+        setTimeout(() => backToTopBtn.classList.remove('opacity-0'), 10);
+      } else {
+        backToTopBtn.classList.add('opacity-0');
+        setTimeout(() => backToTopBtn.classList.add('hidden'), 300);
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     });
 
     // Trial Booking Form Submission
