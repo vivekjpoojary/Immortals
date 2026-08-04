@@ -95,6 +95,7 @@
         <a href="#schedule" class="hover:text-white transition-colors">Schedule</a>
         <a href="#membership" class="hover:text-white transition-colors">Membership</a>
         <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
+        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
         <a href="#contact" class="hover:text-white transition-colors">Location</a>
       </nav>
       <div class="hidden sm:flex items-center gap-4">
@@ -700,6 +701,72 @@
         </div>
       </div>
     </div>
+  <!-- ================= FAQ SECTION ================= -->
+  <section id="faq" class="py-24 bg-panel border-b border-line">
+    <div class="max-w-4xl mx-auto px-5 sm:px-8">
+      <div class="text-center mb-14">
+        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Got Questions?</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Frequently Asked Questions</h2>
+        <p class="mt-4 text-slate-400 text-sm">Everything you need to know about joining Immortals Academy.</p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        <!-- Question 1 -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
+            <span>Do I need any prior martial arts experience to join?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
+            Not at all! Over 80% of our new members start as complete beginners. Our coaches break down basic stance, footwork, and breathing techniques from Day 1 so you learn safely at your own pace.
+          </div>
+        </div>
+
+        <!-- Question 2 -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
+            <span>What should I wear and bring for my free trial class?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
+            Wear comfortable gym workout clothes (t-shirt and shorts/trackpants) and bring a water bottle. All boxing gloves, striking pads, heavy bags, and mat equipment are provided free for your trial session!
+          </div>
+        </div>
+
+        <!-- Question 3 -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
+            <span>Are there dedicated batches for kids and younger students?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
+            Yes! We run specialized kids' Taekwondo, Kung-Fu, and youth martial arts batches (ages 5–12) every weekday afternoon at 4:30 PM. These classes focus on discipline, anti-bullying self-defence, agility, and confidence building.
+          </div>
+        </div>
+
+        <!-- Question 4 -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
+            <span>Do you offer separate ladies or beginner-friendly options?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
+            Yes! We welcome women across all our Kickboxing, Boxing, and Hybrid Fitness batches. Our coaches ensure controlled, supportive partner work where safety and personal goals come first.
+          </div>
+        </div>
+
+        <!-- Question 5 -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
+          <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
+            <span>How does the Free Trial Booking work?</span>
+            <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
+            Simply fill out your name, phone number, and chosen discipline in the booking form below. Clicking the submit button opens a direct WhatsApp message to +91 720431 9094 where our team will confirm your batch time!
+          </div>
+        </div>
+      </div>
+    </div>
   </section>
 
   <!-- ================= CONTACT & LOCATION ================= -->
@@ -905,6 +972,18 @@
 
     // Dynamic Year
     document.getElementById('year').textContent = new Date().getFullYear();
+
+    // FAQ Accordion Toggle
+    document.querySelectorAll('.faq-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const content = btn.nextElementSibling;
+        const icon = btn.querySelector('[data-lucide="chevron-down"]');
+        content.classList.toggle('hidden');
+        if (icon) {
+          icon.classList.toggle('rotate-180');
+        }
+      });
+    });
 
     // Trial Booking Form Submission
     const trialForm = document.getElementById('trialForm');
