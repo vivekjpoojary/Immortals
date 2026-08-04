@@ -1,0 +1,16 @@
+{
+  "name": "Immortals Martial Arts & Fitness Academy",
+  "short_name": "Immortals",
+  "description": "Martial arts and functional fitness training academy in Mangaluru.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090C11",
+  "theme_color": "#ED1C24",
+  "icons": [
+    {
+      "src": "images/Immortals.png",
+      "sizes": "192x192 512x512",
+      "type": "image/png"
+    }
+  ]
+}
