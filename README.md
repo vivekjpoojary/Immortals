@@ -40,6 +40,8 @@ Immortals is a premier combat sports and functional training academy in Mangalur
   - 🐉 Vector SVG Logo & Brand Emblem Integration
   - 📞 Direct Click-to-Call (`tel:+917204319094`)
   - 📲 Instant WhatsApp Form Redirection for Free Trial Bookings
+  - ❓ Interactive FAQ Accordion Section for New Members
+  - 🌐 OpenGraph & Twitter Social Sharing Preview Cards
   - 📅 Interactive Weekly Class Schedule Table
   - 💰 Transparent Membership Pricing Cards
   - 🗺️ Embedded Google Maps Directions
