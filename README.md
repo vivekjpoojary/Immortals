@@ -1,51 +1,68 @@
 # 🐉 Immortals - Martial Arts & Fitness Academy
 
-Official website repository for **Immortals Martial Arts & Fitness Academy** located in Thokkottu & Urwa, Mangaluru, Karnataka.
+Official website repository for **Immortals Martial Arts & Fitness Academy** — Mangaluru's premier combat sports and functional training academy.
 
 ![Immortals Academy Banner](images/Immortals.png)
 
+> **"Awaken The Warrior Within"**
+
 ---
 
-## 🥊 About Immortals Academy
+## 🥋 About Immortals Academy
 
-Immortals is a premier combat sports and functional training academy in Mangaluru offering structured, coach-led programs for kids, adults, beginners, and competitive athletes.
+Founded on **January 1, 2021** in Mangaluru, Immortals was created to build combat athletes with a fearless mindset and transform lives through physical strength, technical precision, and discipline.
 
-### 🏆 Training Disciplines Offered
-- 🥊 **Boxing** — Sharper technique, footwork, pad work, and fight conditioning.
-- 🥋 **Kickboxing** — High-intensity striking combining punches and kicks.
-- 💥 **Muay Thai** — "Art of Eight Limbs" — elbows, knees, shins, and clinch work.
-- 🤼 **MMA (Mixed Martial Arts)** — Well-rounded striking, wrestling, and submission grappling.
-- 🥋 **Taekwondo** — Traditional Olympic kicking art (structured youth & adult batches).
-- 🐉 **Kung-Fu** — Form, discipline, flexibility, and martial arts values.
-- 🗡️ **Wushu** — Dynamic performance and combat martial art.
+### 🌟 Key Highlights & Milestones
+- 🥇 **14+ Years** of Martial Arts & Combat Coaching Experience
+- 🥋 **500+ Students Trained** across academy branches and school programs in Dakshina Kannada & Udupi
+- 🏆 **4 National Medalists Built:** Saanvi S Shetty, Aboobakker Hisan, Druvin J, Saanvi P
+- 🥇 **50+ State Medalists** across Wushu, Kickboxing, and Muay Thai
+- 🎪 **Championship Host:** Hosted 24th State Wushu Championship, Khelo India Wushu Women's State League & 4 District Level Tournaments
+- 🏫 **15+ Institutional Partnerships:** Certified fitness & self-defense workshops across educational institutions in DK
+
+---
+
+## 🥊 Leadership & Coaching Staff
+
+- 🥋 **Rohan S** — *Founder & Head Coach*
+  - National Wushu Judge & Coach, International Certified Personal Trainer, International Muay Thai & Kickboxing Coach, MMA Master Trainer.
+  - South Zone Best Fighter Recipient (Muay Thai), 3 Years Karnataka Team Coach at National Wushu Championship.
+- 🥋 **Jayashree D** — *Assistant Head Coach*
+  - State Judge & National Player.
+- 🥋 **R Daniel** — *Coach*
+  - National Judge, State Judge & District Coach.
+
+---
+
+## 🥊 Training Disciplines Offered
+
+- 🥊 **Boxing** — Sharper stance, footwork, combination punching, and fight-ready stamina.
+- 🥋 **Kickboxing** — High-intensity striking combining punches and kicks for fat burn and agility.
+- 💥 **Muay Thai** — "Art of Eight Limbs" — punches, elbows, knees, and clinch technique.
+- 🤼 **MMA (Mixed Martial Arts)** — Striking, takedowns, and ground conditioning for all levels.
+- 🥋 **Taekwondo** — Traditional Olympic kicking art (specialized youth & adult batches).
+- 🐉 **Kung-Fu** — Form, discipline, flexibility, and martial arts character building.
+- 🗡️ **Wushu** — Official Chinese combat sport (Sanda & Taolu forms).
 - 🏋️ **Gym & Hybrid Fitness** — Strength, mobility, fat loss, and athletic conditioning.
 
 ---
 
-## 📍 Location & Contact Details
+## 📍 Academy Branches & Schedule
 
-- 📍 **Primary Location:** Nethravathi Complex, Door No. 23-22A(6), 2nd Floor, Kapikad, Thokkottu, Ullal, Mangaluru, Karnataka 575020
-- 📍 **Additional Branch:** Urwa, Mangaluru
-- 📞 **Enquiry Helpline / Call:** `+91 720431 9094`
-- 💬 **Direct WhatsApp:** [Chat on WhatsApp (+91 720431 9094)](https://wa.me/917204319094)
-- 📸 **Instagram:** [@immortals_academy](https://www.instagram.com/immortals_academy)
+1. **Thokkottu (Main Headquarters Branch):** Nethravathi Complex, Door No. 23-22A(6), 2nd Floor, Kapikad, Thokkottu, Ullal, Mangaluru 575020.
+   - *Operating Hours:* Monday to Friday — Morning (6:00 AM – 9:00 AM) | Evening (4:00 PM – 10:00 PM)
+2. **Urwastore Branch:** Wednesday & Friday (5:30 PM – 7:30 PM)
+3. **Kulshekar Branch:** Tuesday & Thursday (2:30 PM – 4:00 PM)
+4. **Padavinangady Branch:** Thursday & Saturday (5:00 PM – 6:00 PM)
+5. **Educational Institutions:** 15+ Schools & Colleges in DK & Udupi.
 
 ---
 
-## ⚡ Tech Stack & Features
+## 📞 Contact Details
 
-- **Frontend:** HTML5, Tailwind CSS, Vanilla JavaScript, Lucide Icons, Google Fonts (Oswald & Inter)
-- **Design System:** Crimson Red (`#ED1C24`) Brand Palette, Dark Mode UI, Micro-animations
-- **Features:**
-  - 🐉 Vector SVG Logo & Brand Emblem Integration
-  - 📞 Direct Click-to-Call (`tel:+917204319094`)
-  - 📲 Instant WhatsApp Form Redirection for Free Trial Bookings
-  - ❓ Interactive FAQ Accordion Section for New Members
-  - 🌐 OpenGraph & Twitter Social Sharing Preview Cards
-  - 📅 Interactive Weekly Class Schedule Table
-  - 💰 Transparent Membership Pricing Cards
-  - 🗺️ Embedded Google Maps Directions
-  - 📱 Fully Responsive Mobile-First Design
+- 📞 **Enquiry Helpline / Call:** `+91 720431 9094`
+- 💬 **Direct WhatsApp:** [Chat on WhatsApp (+91 720431 9094)](https://wa.me/917204319094)
+- 📸 **Instagram:** [@immortals_academy](https://www.instagram.com/immortals_academy)
 
 ---
 
