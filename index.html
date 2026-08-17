@@ -3,31 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Immortals - Martial Arts & Fitness Academy | Thokkottu, Mangaluru</title>
+  <title>Immortals - Martial Arts & Fitness Academy | Thokkottu, Urwa, Mangaluru</title>
   <meta name="description"
-    content="Martial arts and functional fitness training in Mangaluru. Boxing, Kickboxing, Kung-Fu, MMA, Muay Thai, Taekwondo, Wushu & Hybrid Fitness. Call 7204319094 for enquiries. Book a free trial.">
+    content="Official Immortals Martial Arts & Fitness Academy led by Founder & Head Coach Rohan S (National Wushu Judge & Coach). Boxing, Kickboxing, Muay Thai, MMA, Taekwondo, Kung-Fu, Wushu & Hybrid Fitness in Thokkottu, Urwastore, Kulshekar & Padavinangady. Call +91 720431 9094 to book a free trial class!">
+  
   <!-- OpenGraph Social Metadata -->
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Immortals Martial Arts &amp; Fitness Academy">
-  <meta property="og:title" content="Immortals - Martial Arts &amp; Fitness Academy | Mangaluru">
-  <meta property="og:description" content="Boxing, Kickboxing, Muay Thai, MMA, Taekwondo, Kung-Fu, Wushu &amp; Hybrid Fitness in Thokkottu &amp; Urwa. Call +91 720431 9094 to book a free trial class!">
+  <meta property="og:site_name" content="Immortals Martial Arts & Fitness Academy">
+  <meta property="og:title" content="Immortals - Martial Arts & Fitness Academy | Mangaluru">
+  <meta property="og:description" content="Awaken The Warrior Within. Training in Boxing, Kickboxing, Muay Thai, MMA, Taekwondo, Kung-Fu, Wushu & Hybrid Fitness across Mangaluru. 500+ students trained, 50+ State Medalists, 4 National Medalists. Call +91 720431 9094.">
   <meta property="og:image" content="images/Immortals.png">
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:title" content="Immortals - Martial Arts &amp; Fitness Academy">
-  <meta property="twitter:description" content="Martial arts and functional fitness training in Mangaluru. Call 7204319094 to book a free trial class.">
+  <meta property="twitter:title" content="Immortals - Martial Arts & Fitness Academy">
+  <meta property="twitter:description" content="Awaken The Warrior Within. Call +91 720431 9094 for free trial class at Immortals Academy.">
   <meta property="twitter:image" content="images/Immortals.png">
   <meta name="theme-color" content="#ED1C24">
   <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
   <link rel="manifest" href="manifest.json">
+
   <!-- Google Rich Search Snippets Schema.org JSON-LD -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SportsActivityLocation",
     "name": "Immortals Martial Arts & Fitness Academy",
-    "image": "https://www.instagram.com/immortals_academy",
+    "image": "https://github.com/vivekjpoojary/Immortals/raw/main/images/Immortals.png",
     "telephone": "+917204319094",
     "url": "https://github.com/vivekjpoojary/Immortals",
+    "founder": {
+      "@type": "Person",
+      "name": "Rohan S",
+      "jobTitle": "Founder and Head Coach",
+      "description": "National Wushu Judge & Coach, International Certified Personal Trainer, International Muay Thai & Kickboxing Coach, MMA Master Trainer."
+    },
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Nethravathi Complex, Door No. 23-22A(6), 2nd Floor, Kapikad",
@@ -57,6 +65,7 @@
     "priceRange": "₹1800 - ₹4200"
   }
   </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -66,9 +75,12 @@
             ink: '#090C11',
             panel: '#121821',
             panel2: '#161D28',
+            panel3: '#1C2534',
             line: 'rgba(255,255,255,0.09)',
             ember: '#ED1C24',
             emberHover: '#C81018',
+            gold: '#D97706',
+            goldLight: '#FBBF24',
             ink2: '#F8FAFC',
             mute: '#A8B1BF'
           },
@@ -87,12 +99,17 @@
       background: #090C11;
     }
     .card-hover {
-      transition: transform .2s ease, border-color .2s ease, box-shadow .2s ease;
+      transition: transform .25s ease, border-color .25s ease, box-shadow .25s ease;
     }
     .card-hover:hover {
       transform: translateY(-4px);
       border-color: rgba(237, 28, 36, 0.45);
-      box-shadow: 0 10px 25px -5px rgba(237, 28, 36, 0.15);
+      box-shadow: 0 12px 30px -5px rgba(237, 28, 36, 0.18);
+    }
+    .gold-card-hover:hover {
+      transform: translateY(-4px);
+      border-color: rgba(217, 119, 6, 0.5);
+      box-shadow: 0 12px 30px -5px rgba(217, 119, 6, 0.2);
     }
     .fade-up {
       animation: fadeUp .6s ease both;
@@ -115,6 +132,11 @@
     .img-container:hover .img-zoom {
       transform: scale(1.05);
     }
+    .tab-active {
+      background-color: #ED1C24 !important;
+      color: #FFFFFF !important;
+      border-color: #ED1C24 !important;
+    }
   </style>
 </head>
 
@@ -122,21 +144,21 @@
 
   <!-- ================= NAV ================= -->
   <header class="fixed top-0 inset-x-0 z-50 bg-ink/90 backdrop-blur-md border-b border-line">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-[74px] flex items-center justify-between">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 h-[76px] flex items-center justify-between">
       <a href="#top" class="flex items-center gap-3">
-        <img src="images/Immortals.png" alt="Immortals Martial Arts &amp; Fitness Academy Logo" class="w-11 h-11 object-contain drop-shadow-[0_0_10px_rgba(237,28,36,0.6)]">
+        <img src="images/Immortals.png" alt="Immortals Martial Arts &amp; Fitness Academy Logo" class="w-12 h-12 object-contain drop-shadow-[0_0_12px_rgba(237,28,36,0.65)]">
         <div class="flex flex-col">
           <span class="font-display font-extrabold text-xl tracking-wider text-white leading-none">IMMORTALS</span>
-          <span class="text-[10px] text-mute font-semibold tracking-widest uppercase">Martial Arts &amp; Fitness</span>
+          <span class="text-[10px] text-ember font-bold tracking-widest uppercase mt-0.5">Martial Arts &amp; Fitness</span>
         </div>
       </a>
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-300">
-        <a href="#programs" class="hover:text-white transition-colors">Programs</a>
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-slate-300">
+        <a href="#about" class="hover:text-white transition-colors">Founder &amp; Story</a>
         <a href="#coaches" class="hover:text-white transition-colors">Coaches</a>
-        <a href="#schedule" class="hover:text-white transition-colors">Schedule</a>
+        <a href="#champions" class="hover:text-white transition-colors">Champions</a>
+        <a href="#programs" class="hover:text-white transition-colors">Programs</a>
+        <a href="#schedule" class="hover:text-white transition-colors">Branches &amp; Schedule</a>
         <a href="#membership" class="hover:text-white transition-colors">Membership</a>
-        <a href="#reviews" class="hover:text-white transition-colors">Reviews</a>
-        <a href="#faq" class="hover:text-white transition-colors">FAQ</a>
         <a href="#contact" class="hover:text-white transition-colors">Location</a>
       </nav>
       <div class="hidden sm:flex items-center gap-4">
@@ -145,18 +167,19 @@
         </a>
         <a href="#contact"
           class="inline-flex items-center gap-2 bg-ember hover:bg-emberHover text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors shadow-lg shadow-ember/25">
-          Book a Free Trial
+          Book Free Trial
         </a>
       </div>
       <button id="menuBtn" class="lg:hidden text-white p-1 focus:outline-none"><i data-lucide="menu" class="w-6 h-6"></i></button>
     </div>
     <div id="mobileMenu" class="hidden lg:hidden bg-panel border-t border-line px-5 py-5 space-y-4 text-slate-300 font-medium">
-      <a href="#programs" class="mobile-link block py-1 hover:text-white">Programs</a>
+      <a href="#about" class="mobile-link block py-1 hover:text-white">Founder &amp; Story</a>
       <a href="#coaches" class="mobile-link block py-1 hover:text-white">Coaches</a>
-      <a href="#schedule" class="mobile-link block py-1 hover:text-white">Schedule</a>
+      <a href="#champions" class="mobile-link block py-1 hover:text-white">Champions &amp; Medals</a>
+      <a href="#programs" class="mobile-link block py-1 hover:text-white">Programs</a>
+      <a href="#schedule" class="mobile-link block py-1 hover:text-white">Branch Schedule</a>
       <a href="#membership" class="mobile-link block py-1 hover:text-white">Membership</a>
-      <a href="#reviews" class="mobile-link block py-1 hover:text-white">Reviews</a>
-      <a href="#contact" class="mobile-link block py-1 hover:text-white">Location</a>
+      <a href="#contact" class="mobile-link block py-1 hover:text-white">Location &amp; Contact</a>
       <a href="tel:+917204319094" class="block py-2 text-ember font-semibold flex items-center gap-2">
         <i data-lucide="phone" class="w-4 h-4"></i> Call +91 720431 9094
       </a>
@@ -169,11 +192,13 @@
     <div class="absolute -top-32 right-0 w-[650px] h-[650px] rounded-full bg-ember/[0.08] blur-[140px] pointer-events-none"></div>
 
     <div class="max-w-7xl mx-auto px-5 sm:px-8 relative z-10">
-      <div class="grid lg:grid-cols-[52%_48%] gap-12 items-center">
+      <div class="grid lg:grid-cols-[54%_46%] gap-12 items-center">
         <div>
           <div class="fade-up flex items-center gap-3 mb-4">
-            <img src="images/Immortals.png" alt="Immortals Dragon Emblem" class="w-12 h-12 object-contain drop-shadow-[0_0_14px_rgba(237,28,36,0.6)]">
-            <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase bg-ember/10 border border-ember/25 px-3.5 py-1.5 rounded-full">Official Academy · Thokkottu &amp; Urwa</span>
+            <img src="images/Immortals.png" alt="Immortals Emblem" class="w-12 h-12 object-contain drop-shadow-[0_0_14px_rgba(237,28,36,0.7)]">
+            <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase bg-ember/10 border border-ember/30 px-3.5 py-1.5 rounded-full">
+              Awaken The Warrior Within
+            </span>
           </div>
 
           <h1 class="fade-up font-display font-extrabold text-white leading-[1.02] text-5xl sm:text-6xl lg:text-[4.2rem]">
@@ -181,8 +206,24 @@
           </h1>
 
           <p class="fade-up mt-6 text-lg text-slate-300 max-w-xl leading-relaxed">
-            Train in Boxing, Kickboxing, Kung-Fu, MMA, Muay Thai, Taekwondo, Wushu and Hybrid Fitness — structured batches for kids, adults, beginners and athletes in Mangaluru.
+            Led by Founder &amp; Head Coach <strong class="text-white">Rohan S</strong> (National Wushu Judge &amp; Coach). Professional training in Boxing, Kickboxing, Muay Thai, MMA, Taekwondo, Kung-Fu, Wushu &amp; Hybrid Fitness across Mangaluru.
           </p>
+
+          <!-- Key Highlights Badges -->
+          <div class="fade-up mt-6 flex flex-wrap gap-2.5">
+            <span class="bg-panel2 border border-line text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-md flex items-center gap-1.5">
+              <i data-lucide="award" class="w-3.5 h-3.5 text-gold"></i> 14+ Yrs Experience
+            </span>
+            <span class="bg-panel2 border border-line text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-md flex items-center gap-1.5">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-ember"></i> 500+ Athletes Trained
+            </span>
+            <span class="bg-panel2 border border-line text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-md flex items-center gap-1.5">
+              <i data-lucide="trophy" class="w-3.5 h-3.5 text-goldLight"></i> 50+ State Medalists
+            </span>
+            <span class="bg-panel2 border border-line text-slate-300 text-xs font-semibold px-3 py-1.5 rounded-md flex items-center gap-1.5">
+              <i data-lucide="star" class="w-3.5 h-3.5 text-ember"></i> 4 National Medalists
+            </span>
+          </div>
 
           <div class="fade-up mt-8 flex flex-col sm:flex-row gap-3">
             <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-ember hover:bg-emberHover text-white font-semibold px-7 py-3.5 rounded-lg transition-colors shadow-lg shadow-ember/30">
@@ -193,27 +234,41 @@
             </a>
           </div>
 
-          <p class="fade-up mt-6 text-mute text-sm flex items-center gap-2">
-            <span>No experience required</span> · <span>Age-appropriate batches</span> · <span class="text-white font-semibold flex items-center gap-1"><i data-lucide="star" class="w-3.5 h-3.5 fill-ember text-ember"></i> 5.0 Rated</span>
+          <p class="fade-up mt-6 text-mute text-sm flex items-center gap-2 flex-wrap">
+            <span>No experience required</span> · <span>Kids &amp; Adult Batches</span> · <span>4 Branches in DK</span> · <span class="text-white font-semibold flex items-center gap-1"><i data-lucide="star" class="w-3.5 h-3.5 fill-gold text-gold"></i> 5.0 Google Rated</span>
           </p>
         </div>
 
+        <!-- Hero Founder Card -->
         <div class="fade-up relative">
-          <div class="rounded-2xl aspect-[4/5] overflow-hidden border border-line shadow-[0_0_50px_rgba(237,28,36,0.18)] relative">
-            <img src="https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=1200&q=80"
-              alt="Coach-led martial arts pad work training at Immortals Academy"
-              class="w-full h-full object-cover object-center">
-            <div class="absolute inset-0 bg-gradient-to-t from-ink/80 via-transparent to-transparent"></div>
-            <div class="absolute bottom-4 left-4 right-4 bg-panel/90 backdrop-blur-md border border-line rounded-xl p-3 text-xs text-slate-300">
-              <span class="text-ember font-semibold">Real Training Floor</span> · Coach-guided pad work &amp; technical conditioning
+          <div class="rounded-2xl overflow-hidden border border-line shadow-[0_0_50px_rgba(237,28,36,0.22)] bg-panel2 p-2 relative">
+            <div class="relative aspect-[4/4.8] rounded-xl overflow-hidden img-container">
+              <img src="images/rohan_s.jpg"
+                alt="Rohan S - Founder and Head Coach at Immortals Academy"
+                class="w-full h-full object-cover object-top img-zoom">
+              <div class="absolute inset-0 bg-gradient-to-t from-ink via-transparent to-transparent opacity-90"></div>
+              
+              <div class="absolute top-4 left-4 bg-ember text-white text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded-full shadow-lg flex items-center gap-1.5">
+                <i data-lucide="shield-check" class="w-3.5 h-3.5"></i> Founder &amp; Head Coach
+              </div>
+
+              <div class="absolute bottom-4 left-4 right-4 bg-panel/95 backdrop-blur-md border border-line rounded-xl p-4 text-xs text-slate-300">
+                <h3 class="font-display font-bold text-lg text-white">Rohan S</h3>
+                <p class="text-ember font-semibold text-[11px] tracking-wide uppercase mt-0.5">National Wushu Judge &amp; Coach · Int. Muay Thai &amp; Kickboxing Coach</p>
+                <div class="mt-2 pt-2 border-t border-line/60 flex items-center justify-between text-[11px] text-mute">
+                  <span>14+ Yrs Experience</span>
+                  <span class="text-white font-semibold">5+ Yrs Immortals</span>
+                </div>
+              </div>
             </div>
           </div>
+
           <div class="hidden sm:flex absolute -bottom-5 -left-5 items-center gap-3 bg-panel border border-line rounded-xl px-5 py-4 shadow-2xl backdrop-blur-md">
-            <div class="flex text-ember">
-              <i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i>
+            <div class="flex text-gold">
+              <i data-lucide="star" class="w-4 h-4 fill-gold"></i><i data-lucide="star" class="w-4 h-4 fill-gold"></i><i data-lucide="star" class="w-4 h-4 fill-gold"></i><i data-lucide="star" class="w-4 h-4 fill-gold"></i><i data-lucide="star" class="w-4 h-4 fill-gold"></i>
             </div>
             <div class="text-sm">
-              <span class="text-white font-semibold">5.0 Rating</span> <span class="text-mute">· 26+ Google reviews</span>
+              <span class="text-white font-semibold">5.0 Rating</span> <span class="text-mute">· 500+ Students Trained</span>
             </div>
           </div>
         </div>
@@ -223,68 +278,424 @@
 
   <!-- ================= TRUST STRIP ================= -->
   <section class="border-y border-line bg-panel">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-2 lg:grid-cols-4 divide-x divide-line">
-      <a href="#reviews" class="p-6 sm:p-8 text-center hover:bg-panel2 transition-colors">
-        <div class="font-display font-semibold text-3xl text-white">5.0★</div>
-        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">Google Rating</div>
-      </a>
-      <div class="p-6 sm:p-8 text-center">
-        <div class="font-display font-semibold text-3xl text-white">26+</div>
-        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">Five-Star Reviews</div>
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid grid-cols-2 lg:grid-cols-5 divide-x divide-line">
+      <div class="p-6 text-center">
+        <div class="font-display font-semibold text-3xl text-white">14+</div>
+        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">Years Experience</div>
       </div>
-      <div class="p-6 sm:p-8 text-center">
-        <div class="font-display font-semibold text-3xl text-white">8</div>
-        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">Training Disciplines</div>
+      <div class="p-6 text-center">
+        <div class="font-display font-semibold text-3xl text-white">500+</div>
+        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">Students Trained</div>
       </div>
-      <a href="tel:+917204319094" class="p-6 sm:p-8 text-center hover:bg-panel2 transition-colors">
+      <div class="p-6 text-center">
+        <div class="font-display font-semibold text-3xl text-gold">50+</div>
+        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">State Medalists</div>
+      </div>
+      <div class="p-6 text-center">
+        <div class="font-display font-semibold text-3xl text-ember">4</div>
+        <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">National Medalists</div>
+      </div>
+      <a href="tel:+917204319094" class="p-6 text-center hover:bg-panel2 transition-colors col-span-2 lg:col-span-1">
         <div class="font-display font-bold text-2xl text-ember">7204319094</div>
         <div class="text-mute text-xs font-medium uppercase tracking-wide mt-1">Direct Helpline</div>
       </a>
     </div>
   </section>
 
-  <!-- ================= PROGRAMS (grouped) ================= -->
+  <!-- ================= FOUNDER SPOTLIGHT ================= -->
+  <section id="about" class="py-24">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-3xl mb-14">
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Meet The Founder</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Leadership &amp; Distinction</h2>
+        <p class="mt-4 text-slate-400 text-base leading-relaxed">
+          Founded and led by <strong>Rohan S</strong>, Immortals Martial Arts &amp; Fitness Academy is built on technical mastery, discipline, and a mission to transform athletes and fitness enthusiasts into national achievers.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-start">
+        <!-- Founder Image Card -->
+        <div class="lg:col-span-5 bg-panel2 border border-line rounded-2xl p-4 shadow-xl">
+          <div class="aspect-[4/4.5] rounded-xl overflow-hidden relative img-container">
+            <img src="images/rohan_s.jpg" alt="Rohan S Founder Immortals" class="w-full h-full object-cover object-top img-zoom">
+            <div class="absolute inset-0 bg-gradient-to-t from-ink/90 via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 text-white">
+              <span class="text-ember font-semibold text-xs uppercase tracking-wider">Founder &amp; Head Coach</span>
+              <h3 class="font-display font-bold text-2xl mt-0.5">Rohan S</h3>
+              <p class="text-slate-300 text-xs mt-1">National Wushu Judge &amp; Coach · Int. Certified Personal Trainer</p>
+            </div>
+          </div>
+          <div class="mt-4 p-3 bg-panel rounded-xl border border-line text-xs text-slate-300 space-y-1.5">
+            <div class="flex items-center justify-between">
+              <span class="text-mute">Martial Arts Experience:</span>
+              <span class="text-white font-semibold">14+ Years</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-mute">Immortals Academy:</span>
+              <span class="text-white font-semibold">5+ Years (Est. 2021)</span>
+            </div>
+            <div class="flex items-center justify-between">
+              <span class="text-mute">Specialization:</span>
+              <span class="text-ember font-semibold">Wushu, Muay Thai, Kickboxing, MMA</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Founder Bio & Credentials -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="bg-panel2 border border-line rounded-2xl p-7">
+            <h3 class="font-display font-semibold text-2xl text-white mb-3">Founder's Story &amp; Philosophy</h3>
+            <p class="text-slate-300 text-sm leading-relaxed">
+              "Started as an enthusiast with a deep passion for fight arts, I evolved by exploring and experiencing various combat style fighting systems. I realized that martial arts is the ultimate vehicle for physical strength, mental clarity, and character building."
+            </p>
+            <p class="text-slate-300 text-sm leading-relaxed mt-3">
+              "I established Immortals to educate, train, and inspire youth and fitness lovers to live a healthy, disciplined lifestyle while creating top-tier fighters capable of winning national and international medals."
+            </p>
+          </div>
+
+          <!-- Major Achievements Grid -->
+          <div class="bg-panel2 border border-line rounded-2xl p-7">
+            <h4 class="font-display font-semibold text-xl text-white mb-4 flex items-center gap-2">
+              <i data-lucide="trophy" class="w-5 h-5 text-gold"></i> Key Achievements &amp; Credentials
+            </h4>
+            <div class="grid sm:grid-cols-2 gap-3 text-xs text-slate-300">
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-panel border border-line">
+                <i data-lucide="award" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">South Zone Best Fighter</strong>
+                  Muay Thai Champion &amp; Best Fighter Recipient
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-panel border border-line">
+                <i data-lucide="shield" class="w-4 h-4 text-ember shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">Karnataka Team Coach (3 Yrs)</strong>
+                  Served as Head Coach at National Wushu Championship
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-panel border border-line">
+                <i data-lucide="user-check" class="w-4 h-4 text-gold shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">National Wushu Judge</strong>
+                  Certified National Judge &amp; International Certified Coach
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-panel border border-line">
+                <i data-lucide="users" class="w-4 h-4 text-ember shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">4 National Medalists Built</strong>
+                  Saanvi S Shetty, Aboobakker Hisan, Druvin J, Saanvi P
+                </div>
+              </div>
+              <div class="flex items-start gap-2.5 p-3 rounded-lg bg-panel border border-line sm:col-span-2">
+                <i data-lucide="calendar" class="w-4 h-4 text-goldLight shrink-0 mt-0.5"></i>
+                <div>
+                  <strong class="text-white block">Championship Host &amp; State Official</strong>
+                  Hosted 24th State Wushu Championship, Khelo India Wushu Women's State League &amp; 4 District Level Tournaments; State Referee at Kickboxing State Matches.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STORY & MILESTONES ================= -->
+  <section class="py-24 bg-panel border-y border-line">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14">
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Our Journey</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">How Immortals Started</h2>
+        <p class="mt-4 text-slate-400 text-sm">Founded on January 1, 2021 in Mangaluru to build fearless combat athletes and transform youth lives.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-3 gap-6">
+        <!-- Milestone 1 -->
+        <div class="bg-panel2 border border-line rounded-xl p-7 relative flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-ember/15 text-ember font-display font-bold text-lg flex items-center justify-center mb-4">01</div>
+            <h3 class="font-display font-semibold text-xl text-white">The Founding Batches</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Immortals began at Urwastore with <strong>Batch 1 (6 students)</strong>, followed rapidly by <strong>Batch 2 (4 students)</strong> and <strong>Batch 3 (20 students)</strong> in Urwastore and Kulshekar.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-line/60 text-xs text-mute font-medium">
+            Jan 2021 · Urwastore &amp; Kulshekar origins
+          </div>
+        </div>
+
+        <!-- Milestone 2 -->
+        <div class="bg-panel2 border border-line rounded-xl p-7 relative flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-ember/15 text-ember font-display font-bold text-lg flex items-center justify-center mb-4">02</div>
+            <h3 class="font-display font-semibold text-xl text-white">Multi-Branch Expansion</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Growing demand led to new academy centers in Padavinangady and the establishment of our main headquarters branch at <strong>Thokkottu (Kapikad)</strong>.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-line/60 text-xs text-mute font-medium">
+            Thokkottu (Main Branch) &amp; Padavinangady
+          </div>
+        </div>
+
+        <!-- Milestone 3 -->
+        <div class="bg-panel2 border border-line rounded-xl p-7 relative flex flex-col justify-between card-hover">
+          <div>
+            <div class="w-10 h-10 rounded-lg bg-gold/15 text-gold font-display font-bold text-lg flex items-center justify-center mb-4">03</div>
+            <h3 class="font-display font-semibold text-xl text-white">Institutional Impact</h3>
+            <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+              Expanded martial arts &amp; self-defense programs across <strong>15 educational institutions</strong> in Dakshina Kannada, training over <strong>500+ students</strong> to date.
+            </p>
+          </div>
+          <div class="mt-6 pt-4 border-t border-line/60 text-xs text-mute font-medium">
+            500+ Students Trained · 15+ Schools &amp; Colleges
+          </div>
+        </div>
+      </div>
+
+      <!-- Mission, Vision & Core Values Box -->
+      <div class="mt-12 bg-panel2 border border-line rounded-2xl p-8 grid lg:grid-cols-3 gap-8">
+        <div>
+          <span class="text-ember font-semibold text-xs uppercase tracking-wider block mb-2">Our Mission</span>
+          <h3 class="font-display font-semibold text-xl text-white">Awaken The Inner Champ</h3>
+          <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+            Awaken the inner champion in youth, build high-achieving athletes, and help people live fit, healthy lives.
+          </p>
+        </div>
+
+        <div>
+          <span class="text-gold font-semibold text-xs uppercase tracking-wider block mb-2">Our Vision</span>
+          <h3 class="font-display font-semibold text-xl text-white">Build Fearless Athletes</h3>
+          <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+            Build the best form of Combat Athletes with a fearless mindset to overcome obstacles and achieve national and international glory.
+          </p>
+        </div>
+
+        <div>
+          <span class="text-ember font-semibold text-xs uppercase tracking-wider block mb-2">Core Philosophy</span>
+          <h3 class="font-display font-semibold text-xl text-white">Character &amp; Discipline</h3>
+          <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+            Humble, respectful, fearless character building paired with physical strength, agility, and mental discipline.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= COACHES TEAM ================= -->
+  <section id="coaches" class="py-24">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14">
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Coaching Staff</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Expert Instructors</h2>
+        <p class="mt-4 text-slate-400 text-sm">Certified national and state judges committed to technical precision, safety, and athletic growth.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Coach 1: Rohan S -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden card-hover flex flex-col">
+          <div class="aspect-[4/3] overflow-hidden relative img-container">
+            <img src="images/rohan_s.jpg" alt="Coach Rohan S" class="w-full h-full object-cover object-top img-zoom">
+            <div class="absolute inset-0 bg-gradient-to-t from-panel2 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 class="font-display font-semibold text-xl text-white">Rohan S</h3>
+                <span class="bg-ember/20 text-ember text-[10px] font-bold px-2.5 py-0.5 rounded uppercase">Head Coach</span>
+              </div>
+              <p class="text-ember text-xs font-semibold uppercase tracking-wide mt-1">National Judge · International Coach</p>
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                14+ years experience. National Wushu Judge &amp; Coach, International Certified Personal Trainer, Muay Thai &amp; Kickboxing Coach, MMA Master Trainer.
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-line/60 space-y-1">
+              <p class="text-mute text-xs"><span class="text-white font-medium">Role:</span> Founder &amp; Head Coach</p>
+              <p class="text-mute text-xs"><span class="text-white font-medium">Teaches:</span> Wushu, Muay Thai, Boxing, MMA</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coach 2: Jayashree D -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden card-hover flex flex-col">
+          <div class="aspect-[4/3] overflow-hidden relative bg-panel flex items-center justify-center img-container">
+            <img src="images/Immortals.png" alt="Coach Jayashree D" class="w-28 h-28 object-contain opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-panel2 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 class="font-display font-semibold text-xl text-white">Jayashree D</h3>
+                <span class="bg-gold/20 text-gold text-[10px] font-bold px-2.5 py-0.5 rounded uppercase">Asst. Head Coach</span>
+              </div>
+              <p class="text-gold text-xs font-semibold uppercase tracking-wide mt-1">State Judge · National Player</p>
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                National level combat athlete and certified State Judge. Focuses on technical form, striking precision, agility, and ladies/juniors batch instruction.
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-line/60 space-y-1">
+              <p class="text-mute text-xs"><span class="text-white font-medium">Role:</span> Assistant Head Coach</p>
+              <p class="text-mute text-xs"><span class="text-white font-medium">Teaches:</span> Kickboxing, Taekwondo, Striking</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coach 3: R Daniel -->
+        <div class="bg-panel2 border border-line rounded-xl overflow-hidden card-hover flex flex-col">
+          <div class="aspect-[4/3] overflow-hidden relative bg-panel flex items-center justify-center img-container">
+            <img src="images/Immortals.png" alt="Coach R Daniel" class="w-28 h-28 object-contain opacity-60">
+            <div class="absolute inset-0 bg-gradient-to-t from-panel2 via-transparent to-transparent"></div>
+          </div>
+          <div class="p-6 flex-1 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between">
+                <h3 class="font-display font-semibold text-xl text-white">R Daniel</h3>
+                <span class="bg-blue-500/20 text-blue-400 text-[10px] font-bold px-2.5 py-0.5 rounded uppercase">Coach</span>
+              </div>
+              <p class="text-blue-400 text-xs font-semibold uppercase tracking-wide mt-1">National Judge · State Judge · District Coach</p>
+              <p class="text-slate-300 text-sm mt-3 leading-relaxed">
+                Experienced referee and district combat coach. Specializes in youth discipline, sparring strategy, and competitive tournament preparation.
+              </p>
+            </div>
+            <div class="mt-4 pt-4 border-t border-line/60 space-y-1">
+              <p class="text-mute text-xs"><span class="text-white font-medium">Role:</span> Senior Instructor</p>
+              <p class="text-mute text-xs"><span class="text-white font-medium">Teaches:</span> Kung-Fu, Wushu, Sparring Drills</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WALL OF CHAMPIONS ================= -->
+  <section id="champions" class="py-24 bg-panel border-y border-line">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8">
+      <div class="max-w-2xl mb-14">
+        <span class="text-gold font-semibold text-xs tracking-[0.18em] uppercase">Wall of Champions</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">National &amp; State Medalists</h2>
+        <p class="mt-4 text-slate-400 text-sm">Building champions who represent Immortals and Karnataka at the highest levels of competition.</p>
+      </div>
+
+      <!-- National Medalists Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <div class="bg-panel2 border border-gold/30 rounded-xl p-6 gold-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-full bg-gold/20 text-gold flex items-center justify-center mb-3">
+              <i data-lucide="trophy" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Saanvi S Shetty</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">National Medalist</p>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">Trained under Coach Rohan S at Immortals Academy. Achieved national podium success in competitive combat championships.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-line/60 text-[11px] text-mute">Immortals Athlete</div>
+        </div>
+
+        <div class="bg-panel2 border border-gold/30 rounded-xl p-6 gold-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-full bg-gold/20 text-gold flex items-center justify-center mb-3">
+              <i data-lucide="trophy" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Aboobakker Hisan</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">National Medalist</p>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">Demonstrated outstanding striking and martial precision, securing national medals in Wushu/Muay Thai tournaments.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-line/60 text-[11px] text-mute">Immortals Athlete</div>
+        </div>
+
+        <div class="bg-panel2 border border-gold/30 rounded-xl p-6 gold-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-full bg-gold/20 text-gold flex items-center justify-center mb-3">
+              <i data-lucide="trophy" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Druvin J</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">National Medalist</p>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">Disciplined fighter building national recognition through rigorous technical conditioning and combat agility.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-line/60 text-[11px] text-mute">Immortals Athlete</div>
+        </div>
+
+        <div class="bg-panel2 border border-gold/30 rounded-xl p-6 gold-card-hover flex flex-col justify-between">
+          <div>
+            <div class="w-9 h-9 rounded-full bg-gold/20 text-gold flex items-center justify-center mb-3">
+              <i data-lucide="trophy" class="w-5 h-5"></i>
+            </div>
+            <h3 class="font-display font-bold text-xl text-white">Saanvi P</h3>
+            <p class="text-gold text-xs font-semibold uppercase tracking-wider mt-1">National Medalist</p>
+            <p class="text-slate-300 text-xs mt-3 leading-relaxed">Exemplary youth combat athlete earning national medals through relentless training and coach guidance.</p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-line/60 text-[11px] text-mute">Immortals Athlete</div>
+        </div>
+      </div>
+
+      <!-- State Medalists & Hosting Distinction -->
+      <div class="mt-8 bg-panel2 border border-line rounded-2xl p-7 grid lg:grid-cols-2 gap-6 items-center">
+        <div>
+          <span class="text-gold font-semibold text-xs uppercase tracking-wider">State Legacy</span>
+          <h3 class="font-display font-bold text-2xl text-white mt-1">50+ State Medalists &amp; Championship Hosting</h3>
+          <p class="text-slate-300 text-sm mt-2 leading-relaxed">
+            Beyond our 4 National Medalists, Immortals has produced <strong>50+ State Medalists</strong> across Karnataka. We proudly hosted the <strong>24th State Wushu Championship</strong>, the <strong>Khelo India Wushu Women’s State League</strong>, and <strong>4 District Level Martial Arts Tournaments</strong>.
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-3 text-center">
+          <div class="bg-panel border border-line rounded-xl p-4">
+            <div class="font-display font-extrabold text-3xl text-gold">50+</div>
+            <div class="text-mute text-xs font-medium uppercase mt-1">State Medalists</div>
+          </div>
+          <div class="bg-panel border border-line rounded-xl p-4">
+            <div class="font-display font-extrabold text-3xl text-white">24th</div>
+            <div class="text-mute text-xs font-medium uppercase mt-1">State Wushu Host</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PROGRAMS ================= -->
   <section id="programs" class="py-24">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="max-w-2xl mb-14">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Programs</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Find the Right Training Path</h2>
-        <p class="mt-4 text-slate-400">Eight disciplines, grouped by what you're looking to build.</p>
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Disciplines</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Eight Specialized Programs</h2>
+        <p class="mt-4 text-slate-400 text-sm">Structured instruction for kids, adults, beginners, and competitive combat athletes.</p>
       </div>
 
       <!-- Striking -->
       <div class="mb-14">
         <h3 class="text-white font-display font-semibold text-lg tracking-wide uppercase mb-5 flex items-center gap-2">
-          <i data-lucide="hand" class="w-5 h-5 text-ember"></i> Striking
+          <i data-lucide="hand" class="w-5 h-5 text-ember"></i> Striking Arts
         </h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
             <h4 class="font-display font-semibold text-xl text-white">Boxing</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">Sharper technique, faster footwork and fight-ready conditioning through coached drills and pad work.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Beginner–Advanced</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Technique · Cardio · Self-defence</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">Sharper stance, rapid footwork, combination punching, and fight-ready stamina guided by national coaches.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Beginner to Advanced</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Technique · Cardio · Self-Defense</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
+
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
             <h4 class="font-display font-semibold text-xl text-white">Kickboxing</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">High-intensity striking combining punches and kicks for full-body fitness and practical skill.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All levels</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Fat burn · Agility · Strength</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">High-octane striking combining punches and kicks for total body fat burn, speed, and real combat skill.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All Levels</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Agility · Conditioning · Power</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
+
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
             <h4 class="font-display font-semibold text-xl text-white">Muay Thai</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">The "Art of Eight Limbs" — striking with fists, elbows, knees and shins under coached supervision.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All levels</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Power · Endurance · Self-defence</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">The "Art of Eight Limbs" — punches, elbows, knees, and shins under direct guidance of South Zone Best Fighter coach.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All Levels</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Striking Power · Clinch · Endurance</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
+
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
             <h4 class="font-display font-semibold text-xl text-white">Taekwondo</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">Korea's kicking-based martial art, built on speed, precision and respect. Popular with younger students.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Beginner-friendly</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Flexibility · Focus · Discipline</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">Dynamic kicking art emphasizing speed, flexibility, anti-bullying self-defense, and mental focus.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Kids &amp; Adults</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Flexibility · Discipline · Form</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
       </div>
@@ -296,25 +707,27 @@
         </h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
-            <h4 class="font-display font-semibold text-xl text-white">MMA</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">Striking, grappling and conditioning combined, with level-based instruction for every stage.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Beginners through competitive athletes</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Well-rounded skill · Conditioning</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <h4 class="font-display font-semibold text-xl text-white">MMA (Mixed Martial Arts)</h4>
+            <p class="text-slate-400 text-sm mt-2 flex-1">Seamless integration of striking, takedowns, and ground conditioning with level-based athlete progression.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Beginners to Competitive</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Complete Combat · Strength</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
+
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
             <h4 class="font-display font-semibold text-xl text-white">Kung-Fu</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">Traditional Chinese martial arts focused on form, discipline, flexibility and controlled power.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Kids &amp; adults</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Discipline · Coordination · Respect</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">Traditional Chinese martial arts focusing on coordination, fluidity, bodily control, and character building.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> Kids &amp; Adults</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Balance · Respect · Precision</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
+
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col">
             <h4 class="font-display font-semibold text-xl text-white">Wushu</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">The performance and combat art of Chinese martial arts — acrobatic, expressive and powerful.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All levels</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Agility · Balance · Coordination</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">Official national combat sport of China. Coached by National Wushu Judge Rohan S for competition and fitness.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All Levels &amp; Competitors</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Acrobatic Skill · Sanda Combat</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
       </div>
@@ -322,298 +735,161 @@
       <!-- Fitness -->
       <div>
         <h3 class="text-white font-display font-semibold text-lg tracking-wide uppercase mb-5 flex items-center gap-2">
-          <i data-lucide="dumbbell" class="w-5 h-5 text-ember"></i> Fitness
+          <i data-lucide="dumbbell" class="w-5 h-5 text-ember"></i> Fitness &amp; Gym
         </h3>
         <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           <div class="card-hover bg-panel border border-line rounded-xl p-6 flex flex-col sm:col-span-2 lg:col-span-1">
             <h4 class="font-display font-semibold text-xl text-white">Gym &amp; Hybrid Fitness</h4>
-            <p class="text-slate-400 text-sm mt-2 flex-1">Functional strength and conditioning that complements your martial arts training — or stands strong on its own.</p>
-            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All levels</p>
-            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Strength · Weight loss · Mobility</p>
-            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book a Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
+            <p class="text-slate-400 text-sm mt-2 flex-1">Functional strength, core conditioning, weight loss, and athletic mobility tailored for fighters and fitness seekers.</p>
+            <p class="text-mute text-xs mt-4"><span class="text-white font-medium">Level:</span> All Levels</p>
+            <p class="text-mute text-xs mt-1"><span class="text-white font-medium">Focus:</span> Fat Loss · Core · Explosive Power</p>
+            <a href="#contact" class="text-ember text-sm font-semibold mt-4 inline-flex items-center gap-1 hover:gap-2 transition-all">Book Trial <i data-lucide="arrow-right" class="w-4 h-4"></i></a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ================= WHY IMMORTALS ================= -->
-  <section class="py-24 bg-panel border-y border-line">
+  <!-- ================= MULTI-BRANCH SCHEDULE ================= -->
+  <section id="schedule" class="py-24 bg-panel border-y border-line">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="max-w-2xl mb-14">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Why Immortals</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Training Built Around You</h2>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <div class="bg-panel2 border border-line rounded-xl p-6">
-          <i data-lucide="list-checks" class="w-6 h-6 text-ember mb-4"></i>
-          <h3 class="text-white font-semibold">Structured Coaching</h3>
-          <p class="text-slate-400 text-sm mt-2">Progressive instruction for different ages and experience levels — not an unstructured open workout.</p>
-        </div>
-        <div class="bg-panel2 border border-line rounded-xl p-6">
-          <i data-lucide="layers" class="w-6 h-6 text-ember mb-4"></i>
-          <h3 class="text-white font-semibold">Multi-Discipline Training</h3>
-          <p class="text-slate-400 text-sm mt-2">Explore eight combat and fitness disciplines without changing academies.</p>
-        </div>
-        <div class="bg-panel2 border border-line rounded-xl p-6">
-          <i data-lucide="users" class="w-6 h-6 text-ember mb-4"></i>
-          <h3 class="text-white font-semibold">Supportive Environment</h3>
-          <p class="text-slate-400 text-sm mt-2">Train in a focused community where coaches monitor technique, consistency and improvement.</p>
-        </div>
-        <div class="bg-panel2 border border-line rounded-xl p-6">
-          <i data-lucide="activity" class="w-6 h-6 text-ember mb-4"></i>
-          <h3 class="text-white font-semibold">Fitness With Purpose</h3>
-          <p class="text-slate-400 text-sm mt-2">Build strength, mobility, coordination and endurance through skill-based training.</p>
-        </div>
+      <div class="max-w-2xl mb-10">
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Branches &amp; Timetable</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Class Schedule &amp; Locations</h2>
+        <p class="mt-4 text-slate-400 text-sm">Select a branch location to view weekly batch timings across Mangaluru.</p>
       </div>
 
-      <!-- Safety evidence row -->
-      <div class="mt-6 bg-panel2 border border-line rounded-xl p-6 sm:p-7">
-        <h4 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Our Safety Practices</h4>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-5 gap-4 text-sm text-slate-400">
-          <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-ember shrink-0"></i> Controlled sparring</div>
-          <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-ember shrink-0"></i> Protective equipment required</div>
-          <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-ember shrink-0"></i> Level-appropriate drills</div>
-          <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-ember shrink-0"></i> Supervised kids' batches</div>
-          <div class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-ember shrink-0"></i> Equipment hygiene routine</div>
-        </div>
+      <!-- Branch Selection Tabs -->
+      <div class="flex flex-wrap gap-2 mb-8 border-b border-line pb-4" id="branchTabs">
+        <button onclick="switchBranch('thokkottu')" id="tab-thokkottu" class="tab-btn tab-active px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider border border-line transition-all">
+          Thokkottu (Main Branch)
+        </button>
+        <button onclick="switchBranch('urwastore')" id="tab-urwastore" class="tab-btn bg-panel2 text-slate-300 hover:text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider border border-line transition-all">
+          Urwastore Branch
+        </button>
+        <button onclick="switchBranch('kulshekar')" id="tab-kulshekar" class="tab-btn bg-panel2 text-slate-300 hover:text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider border border-line transition-all">
+          Kulshekar Branch
+        </button>
+        <button onclick="switchBranch('padavinangady')" id="tab-padavinangady" class="tab-btn bg-panel2 text-slate-300 hover:text-white px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider border border-line transition-all">
+          Padavinangady Branch
+        </button>
       </div>
-    </div>
-  </section>
 
-  <!-- ================= ABOUT ================= -->
-  <section id="about" class="py-24">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14 items-center">
-      <div class="grid grid-cols-2 gap-4">
-        <div class="rounded-xl aspect-[3/4] overflow-hidden border border-line shadow-lg col-span-1 img-container">
-          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1000&q=80"
-            alt="Immortals Heavy Bag Training Area"
-            class="w-full h-full object-cover img-zoom">
-        </div>
-        <div class="rounded-xl aspect-[3/4] overflow-hidden border border-line shadow-lg col-span-1 mt-8 img-container">
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80"
-            alt="Immortals Functional Fitness Studio"
-            class="w-full h-full object-cover img-zoom">
-        </div>
-        <p class="col-span-2 text-mute text-xs text-center font-medium uppercase tracking-wide">Immortals Facility &amp; Training Atmosphere</p>
-      </div>
-      <div>
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">About Us</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Our Story</h2>
-        <p class="mt-5 text-slate-300 leading-relaxed">
-          Immortals was created to give Mangaluru a focused training environment where people of different ages and experience levels can become stronger, more disciplined and more confident.
-        </p>
-        <p class="mt-4 text-slate-300 leading-relaxed">
-          From first-time beginners to competitive athletes, every member follows structured coaching designed around technique, conditioning and consistent progress. Our academy brings eight martial arts and fitness disciplines together across our main locations in Thokkottu and Urwa.
-        </p>
-        <p class="mt-4 text-slate-300 leading-relaxed">
-          We believe martial arts is more than learning how to fight. It develops composure, resilience and respect — qualities that extend far beyond the training floor.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= COACHES ================= -->
-  <section id="coaches" class="py-24 bg-panel border-y border-line">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="max-w-2xl mb-14">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Our Team</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Meet Your Coaches</h2>
-        <p class="mt-4 text-slate-400 text-sm">Led by experienced martial artists and certified athletic trainers dedicated to technical safety and personal growth.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <!-- Coach 1 -->
-        <div class="bg-panel2 border border-line rounded-xl overflow-hidden card-hover flex flex-col">
-          <div class="aspect-[4/3] overflow-hidden relative img-container">
-            <img src="https://images.unsplash.com/photo-1567013127542-490d757e51fc?auto=format&fit=crop&w=800&q=80"
-              alt="Coach Vivek Poojary"
-              class="w-full h-full object-cover img-zoom">
-            <div class="absolute inset-0 bg-gradient-to-t from-panel2 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-display font-semibold text-xl text-white">Vivek Poojary</h3>
-              <p class="text-ember text-xs font-semibold uppercase tracking-wide mt-1">Head Coach · MMA &amp; Wushu Specialist</p>
-              <p class="text-slate-300 text-sm mt-3 leading-relaxed">10+ years of martial arts &amp; combat sports coaching. Specializes in technical MMA transitions, combat strength conditioning, and athlete development.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-line/60 space-y-1">
-              <p class="text-mute text-xs"><span class="text-white font-medium">Credentials:</span> State Wushu Athlete &amp; Certified Combat Trainer</p>
-              <p class="text-mute text-xs"><span class="text-white font-medium">Teaches:</span> MMA, Wushu, Competition Batches</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coach 2 -->
-        <div class="bg-panel2 border border-line rounded-xl overflow-hidden card-hover flex flex-col">
-          <div class="aspect-[4/3] overflow-hidden relative img-container">
-            <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=800&q=80"
-              alt="Coach Sarah Khan"
-              class="w-full h-full object-cover img-zoom">
-            <div class="absolute inset-0 bg-gradient-to-t from-panel2 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-display font-semibold text-xl text-white">Sarah Khan</h3>
-              <p class="text-ember text-xs font-semibold uppercase tracking-wide mt-1">Striking Coach · Kickboxing &amp; Muay Thai</p>
-              <p class="text-slate-300 text-sm mt-3 leading-relaxed">7+ years experience in striking arts. Focused on punch-kick combination fluidity, pad work precision, and high-energy cardio conditioning.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-line/60 space-y-1">
-              <p class="text-mute text-xs"><span class="text-white font-medium">Credentials:</span> Certified Boxing Coach &amp; Muay Thai Practitioner</p>
-              <p class="text-mute text-xs"><span class="text-white font-medium">Teaches:</span> Boxing, Kickboxing, Adult Fitness</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Coach 3 -->
-        <div class="bg-panel2 border border-line rounded-xl overflow-hidden card-hover flex flex-col">
-          <div class="aspect-[4/3] overflow-hidden relative img-container">
-            <img src="https://images.unsplash.com/photo-1599058945522-28d584b6f0ff?auto=format&fit=crop&w=800&q=80"
-              alt="Coach Rohan D'Souza"
-              class="w-full h-full object-cover img-zoom">
-            <div class="absolute inset-0 bg-gradient-to-t from-panel2 via-transparent to-transparent"></div>
-          </div>
-          <div class="p-6 flex-1 flex flex-col justify-between">
-            <div>
-              <h3 class="font-display font-semibold text-xl text-white">Rohan D'Souza</h3>
-              <p class="text-ember text-xs font-semibold uppercase tracking-wide mt-1">Youth Program Director · Taekwondo &amp; Kung-Fu</p>
-              <p class="text-slate-300 text-sm mt-3 leading-relaxed">8+ years guiding young martial artists. Combines strict discipline and agility drills with a encouraging, child-friendly coaching approach.</p>
-            </div>
-            <div class="mt-4 pt-4 border-t border-line/60 space-y-1">
-              <p class="text-mute text-xs"><span class="text-white font-medium">Credentials:</span> 2nd Dan Black Belt Taekwondo</p>
-              <p class="text-mute text-xs"><span class="text-white font-medium">Teaches:</span> Kids Taekwondo, Kung-Fu &amp; Juniors</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= SCHEDULE ================= -->
-  <section id="schedule" class="py-24">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="max-w-2xl mb-12">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Weekly Timetable</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Class Schedule</h2>
-        <p class="mt-4 text-slate-400">Regular batch timings — reserve your preferred slot when booking your free trial.</p>
-      </div>
-      <div class="overflow-x-auto border border-line rounded-xl shadow-xl">
-        <table class="w-full text-sm min-w-[720px]">
-          <thead>
-            <tr class="bg-panel2 text-white font-display font-medium tracking-wide">
-              <th class="text-left p-4 border-b border-line">Time</th>
-              <th class="text-left p-4 border-b border-line">Mon</th>
-              <th class="text-left p-4 border-b border-line">Tue</th>
-              <th class="text-left p-4 border-b border-line">Wed</th>
-              <th class="text-left p-4 border-b border-line">Thu</th>
-              <th class="text-left p-4 border-b border-line">Fri</th>
-              <th class="text-left p-4 border-b border-line">Sat</th>
-            </tr>
-          </thead>
-          <tbody class="text-slate-300 divide-y divide-line">
-            <tr class="hover:bg-panel/80 transition-colors">
-              <td class="p-4 font-semibold text-white bg-panel/40">6:00 AM</td>
-              <td class="p-4"><span class="bg-ember/15 text-ember px-2 py-1 rounded text-xs font-semibold">Boxing</span></td>
-              <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA</span></td>
-              <td class="p-4"><span class="bg-ember/15 text-ember px-2 py-1 rounded text-xs font-semibold">Boxing</span></td>
-              <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA</span></td>
-              <td class="p-4"><span class="bg-ember/15 text-ember px-2 py-1 rounded text-xs font-semibold">Boxing</span></td>
-              <td class="p-4"><span class="bg-green-500/15 text-green-400 px-2 py-1 rounded text-xs font-semibold">Hybrid Fitness</span></td>
-            </tr>
-            <tr class="hover:bg-panel/80 transition-colors">
-              <td class="p-4 font-semibold text-white bg-panel/40">4:30 PM</td>
-              <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Kids Taekwondo</span></td>
-              <td class="p-4"><span class="bg-yellow-500/15 text-yellow-400 px-2 py-1 rounded text-xs font-semibold">Kids Kung-Fu</span></td>
-              <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Kids Taekwondo</span></td>
-              <td class="p-4"><span class="bg-yellow-500/15 text-yellow-400 px-2 py-1 rounded text-xs font-semibold">Kids Kung-Fu</span></td>
-              <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Kids Taekwondo</span></td>
-              <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Kids MMA</span></td>
-            </tr>
-            <tr class="hover:bg-panel/80 transition-colors">
-              <td class="p-4 font-semibold text-white bg-panel/40">5:30 PM</td>
-              <td class="p-4"><span class="bg-red-500/15 text-red-400 px-2 py-1 rounded text-xs font-semibold">Muay Thai</span></td>
-              <td class="p-4"><span class="bg-orange-500/15 text-orange-400 px-2 py-1 rounded text-xs font-semibold">Kickboxing</span></td>
-              <td class="p-4"><span class="bg-red-500/15 text-red-400 px-2 py-1 rounded text-xs font-semibold">Muay Thai</span></td>
-              <td class="p-4"><span class="bg-orange-500/15 text-orange-400 px-2 py-1 rounded text-xs font-semibold">Kickboxing</span></td>
-              <td class="p-4"><span class="bg-red-500/15 text-red-400 px-2 py-1 rounded text-xs font-semibold">Muay Thai</span></td>
-              <td class="p-4"><span class="bg-teal-500/15 text-teal-400 px-2 py-1 rounded text-xs font-semibold">Wushu</span></td>
-            </tr>
-            <tr class="hover:bg-panel/80 transition-colors">
-              <td class="p-4 font-semibold text-white bg-panel/40">7:00 PM</td>
-              <td class="p-4"><span class="bg-green-500/15 text-green-400 px-2 py-1 rounded text-xs font-semibold">Hybrid Fitness</span></td>
-              <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA</span></td>
-              <td class="p-4"><span class="bg-green-500/15 text-green-400 px-2 py-1 rounded text-xs font-semibold">Hybrid Fitness</span></td>
-              <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA</span></td>
-              <td class="p-4"><span class="bg-green-500/15 text-green-400 px-2 py-1 rounded text-xs font-semibold">Hybrid Fitness</span></td>
-              <td class="p-4"><span class="bg-ember/20 text-white px-2 py-1 rounded text-xs font-semibold">Open Mat Sparring</span></td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </div>
-  </section>
-
-  <!-- ================= TESTIMONIALS ================= -->
-  <section id="reviews" class="py-24 bg-panel border-y border-line">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="max-w-2xl mb-12">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Testimonials</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">What Our Members Say</h2>
-        <div class="flex items-center gap-2 mt-4">
-          <div class="flex text-ember">
-            <i data-lucide="star" class="w-5 h-5 fill-ember"></i><i data-lucide="star" class="w-5 h-5 fill-ember"></i><i data-lucide="star" class="w-5 h-5 fill-ember"></i><i data-lucide="star" class="w-5 h-5 fill-ember"></i><i data-lucide="star" class="w-5 h-5 fill-ember"></i>
-          </div>
-          <span class="text-slate-300 text-sm font-semibold">5.0 Rating</span>
-          <span class="text-slate-400 text-sm">· Verified Google Reviews (Mangaluru)</span>
-        </div>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col justify-between card-hover">
+      <!-- Branch Content Panels -->
+      <!-- Thokkottu Panel -->
+      <div id="branch-thokkottu" class="branch-panel space-y-6">
+        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <div class="flex text-ember mb-3">
-              <i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i>
-            </div>
-            <p class="text-slate-300 text-sm leading-relaxed font-normal">"The best martial arts academy in Mangaluru hands down! Coach Vivek and the team focus on technical form and discipline. Started with Kickboxing 6 months ago and my stamina has doubled."</p>
+            <span class="bg-ember/20 text-ember text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">Main Headquarters Branch</span>
+            <h3 class="font-display font-bold text-2xl text-white mt-2">Thokkottu Academy</h3>
+            <p class="text-slate-300 text-sm mt-1">Nethravathi Complex, Kapikad, Thokkottu (Monday to Friday)</p>
           </div>
-          <div class="mt-6 pt-4 border-t border-line/60 flex items-center justify-between">
-            <div>
-              <p class="text-white font-semibold text-sm">Akash Shetty</p>
-              <p class="text-mute text-xs">Kickboxing &amp; MMA Member (6 mos)</p>
-            </div>
-            <div class="w-7 h-7 rounded-full bg-ember/20 text-ember text-xs font-bold flex items-center justify-center">AS</div>
+          <div class="text-right">
+            <span class="text-white text-xs font-semibold block">Operating Batches:</span>
+            <span class="text-ember text-sm font-bold block">Morning: 6:00 AM – 9:00 AM</span>
+            <span class="text-ember text-sm font-bold block">Evening: 4:00 PM – 10:00 PM</span>
           </div>
         </div>
 
-        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col justify-between card-hover">
-          <div>
-            <div class="flex text-ember mb-3">
-              <i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i>
-            </div>
-            <p class="text-slate-300 text-sm leading-relaxed font-normal">"My 8-year-old son joined the Taekwondo batch here. The coaches are super patient, energetic, and teach discipline along with self-defence. Highly recommended for parents in Thokkottu!"</p>
-          </div>
-          <div class="mt-6 pt-4 border-t border-line/60 flex items-center justify-between">
-            <div>
-              <p class="text-white font-semibold text-sm">Priya Rao</p>
-              <p class="text-mute text-xs">Parent of Taekwondo Student</p>
-            </div>
-            <div class="w-7 h-7 rounded-full bg-ember/20 text-ember text-xs font-bold flex items-center justify-center">PR</div>
-          </div>
+        <div class="overflow-x-auto border border-line rounded-xl shadow-xl">
+          <table class="w-full text-sm min-w-[700px]">
+            <thead>
+              <tr class="bg-panel2 text-white font-display font-medium tracking-wide">
+                <th class="text-left p-4 border-b border-line">Batch</th>
+                <th class="text-left p-4 border-b border-line">Mon</th>
+                <th class="text-left p-4 border-b border-line">Tue</th>
+                <th class="text-left p-4 border-b border-line">Wed</th>
+                <th class="text-left p-4 border-b border-line">Thu</th>
+                <th class="text-left p-4 border-b border-line">Fri</th>
+              </tr>
+            </thead>
+            <tbody class="text-slate-300 divide-y divide-line">
+              <tr class="hover:bg-panel/80">
+                <td class="p-4 font-semibold text-white bg-panel/40">Morning (6–9 AM)</td>
+                <td class="p-4"><span class="bg-ember/15 text-ember px-2 py-1 rounded text-xs font-semibold">Boxing &amp; Fitness</span></td>
+                <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA &amp; Muay Thai</span></td>
+                <td class="p-4"><span class="bg-ember/15 text-ember px-2 py-1 rounded text-xs font-semibold">Boxing &amp; Fitness</span></td>
+                <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA &amp; Muay Thai</span></td>
+                <td class="p-4"><span class="bg-ember/15 text-ember px-2 py-1 rounded text-xs font-semibold">Wushu &amp; Conditioning</span></td>
+              </tr>
+              <tr class="hover:bg-panel/80">
+                <td class="p-4 font-semibold text-white bg-panel/40">Evening (4–6 PM)</td>
+                <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Kids Taekwondo</span></td>
+                <td class="p-4"><span class="bg-gold/15 text-gold px-2 py-1 rounded text-xs font-semibold">Kids Kung-Fu</span></td>
+                <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Kids Taekwondo</span></td>
+                <td class="p-4"><span class="bg-gold/15 text-gold px-2 py-1 rounded text-xs font-semibold">Kids Kung-Fu</span></td>
+                <td class="p-4"><span class="bg-purple-500/15 text-purple-400 px-2 py-1 rounded text-xs font-semibold">Juniors Combat</span></td>
+              </tr>
+              <tr class="hover:bg-panel/80">
+                <td class="p-4 font-semibold text-white bg-panel/40">Evening (6–10 PM)</td>
+                <td class="p-4"><span class="bg-red-500/15 text-red-400 px-2 py-1 rounded text-xs font-semibold">Kickboxing</span></td>
+                <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA Sparring</span></td>
+                <td class="p-4"><span class="bg-red-500/15 text-red-400 px-2 py-1 rounded text-xs font-semibold">Muay Thai</span></td>
+                <td class="p-4"><span class="bg-blue-500/15 text-blue-400 px-2 py-1 rounded text-xs font-semibold">MMA Sparring</span></td>
+                <td class="p-4"><span class="bg-green-500/15 text-green-400 px-2 py-1 rounded text-xs font-semibold">Hybrid Fitness</span></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
+      </div>
 
-        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col justify-between card-hover">
+      <!-- Urwastore Panel -->
+      <div id="branch-urwastore" class="branch-panel hidden space-y-6">
+        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
           <div>
-            <div class="flex text-ember mb-3">
-              <i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i><i data-lucide="star" class="w-4 h-4 fill-ember"></i>
-            </div>
-            <p class="text-slate-300 text-sm leading-relaxed font-normal">"Great atmosphere for both beginners and experienced fighters. The Muay Thai pad work sessions are intense, technical, and incredibly rewarding!"</p>
+            <span class="bg-blue-500/20 text-blue-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">Origin Branch</span>
+            <h3 class="font-display font-bold text-2xl text-white mt-2">Urwastore Branch</h3>
+            <p class="text-slate-300 text-sm mt-1">Urwa Store Center (Wednesday &amp; Friday)</p>
           </div>
-          <div class="mt-6 pt-4 border-t border-line/60 flex items-center justify-between">
-            <div>
-              <p class="text-white font-semibold text-sm">Mohammad Sahil</p>
-              <p class="text-mute text-xs">Muay Thai Batch</p>
-            </div>
-            <div class="w-7 h-7 rounded-full bg-ember/20 text-ember text-xs font-bold flex items-center justify-center">MS</div>
+          <div>
+            <span class="text-ember text-base font-bold">5:30 PM – 7:30 PM</span>
+            <span class="text-mute text-xs block">Wed &amp; Fri Evening Batches</span>
           </div>
         </div>
+      </div>
+
+      <!-- Kulshekar Panel -->
+      <div id="branch-kulshekar" class="branch-panel hidden space-y-6">
+        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <span class="bg-gold/20 text-gold text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">Active Branch</span>
+            <h3 class="font-display font-bold text-2xl text-white mt-2">Kulshekar Branch</h3>
+            <p class="text-slate-300 text-sm mt-1">Kulshekar Center (Tuesday &amp; Thursday)</p>
+          </div>
+          <div>
+            <span class="text-gold text-base font-bold">2:30 PM – 4:00 PM</span>
+            <span class="text-mute text-xs block">Tue &amp; Thu Afternoon Batches</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Padavinangady Panel -->
+      <div id="branch-padavinangady" class="branch-panel hidden space-y-6">
+        <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+          <div>
+            <span class="bg-purple-500/20 text-purple-400 text-[11px] font-bold uppercase tracking-wider px-3 py-1 rounded">Active Branch</span>
+            <h3 class="font-display font-bold text-2xl text-white mt-2">Padavinangady Branch</h3>
+            <p class="text-slate-300 text-sm mt-1">Padavinangady Center (Thursday &amp; Saturday)</p>
+          </div>
+          <div>
+            <span class="text-purple-400 text-base font-bold">5:00 PM – 6:00 PM</span>
+            <span class="text-mute text-xs block">Thu &amp; Sat Evening Batches</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Educational Institutions Box -->
+      <div class="mt-8 bg-panel2 border border-line rounded-xl p-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-lg bg-ember/15 text-ember flex items-center justify-center shrink-0">
+            <i data-lucide="building" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <h4 class="font-display font-semibold text-lg text-white">Institutional Partnerships</h4>
+            <p class="text-slate-300 text-xs mt-0.5">Immortals conducts certified fitness &amp; self-defense programs across 15+ schools and colleges in DK.</p>
+          </div>
+        </div>
+        <a href="#contact" class="text-ember font-semibold text-xs uppercase tracking-wider hover:underline shrink-0">Inquire for Institution <i data-lucide="arrow-right" class="w-3.5 h-3.5 inline"></i></a>
       </div>
     </div>
   </section>
@@ -622,7 +898,7 @@
   <section id="membership" class="py-24">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="max-w-2xl mb-14">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Membership</span>
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Membership</span>
         <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Choose Your Plan</h2>
         <p class="mt-4 text-slate-400">Transparent pricing with zero hidden fees. Includes free trial class.</p>
       </div>
@@ -631,14 +907,14 @@
         <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col justify-between card-hover">
           <div>
             <h3 class="font-display font-semibold text-xl text-white">Kids Program</h3>
-            <p class="text-slate-400 text-sm mt-2">Ages 5–12. Discipline, focus and fitness in a structured, safe environment.</p>
+            <p class="text-slate-400 text-sm mt-2">Ages 5–12. Discipline, focus, agility and self-defense in a safe environment.</p>
             <div class="mt-6">
               <span class="font-display font-semibold text-3xl text-white">₹1,800</span>
               <span class="text-mute text-xs"> / month</span>
             </div>
             <ul class="mt-5 space-y-2 text-xs text-slate-300">
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> 3 Batches / Week</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> Taekwondo / Kung-Fu</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> Taekwondo &amp; Kung-Fu</li>
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> Belt Testing Included</li>
             </ul>
           </div>
@@ -649,7 +925,7 @@
         <div class="bg-panel2 border border-line rounded-xl p-6 flex flex-col justify-between card-hover">
           <div>
             <h3 class="font-display font-semibold text-xl text-white">Basic Plan</h3>
-            <p class="text-slate-400 text-sm mt-2">One discipline of your choice (e.g., Boxing or Kickboxing).</p>
+            <p class="text-slate-400 text-sm mt-2">One primary combat discipline (e.g., Boxing or Kickboxing).</p>
             <div class="mt-6">
               <span class="font-display font-semibold text-3xl text-white">₹2,200</span>
               <span class="text-mute text-xs"> / month</span>
@@ -676,7 +952,7 @@
             <ul class="mt-5 space-y-2 text-xs text-slate-300">
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> 5 Batches / Week</li>
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> Boxing, Muay Thai &amp; MMA</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> Saturday Open Mat Access</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> Saturday Open Sparring</li>
             </ul>
           </div>
           <a href="#contact" class="mt-8 block text-center bg-ember hover:bg-emberHover text-white text-sm font-semibold py-2.5 rounded-lg transition-colors shadow-md">Select Plan</a>
@@ -700,110 +976,56 @@
           <a href="#contact" class="mt-8 block text-center border border-line hover:border-ember text-white text-sm font-semibold py-2.5 rounded-lg transition-colors">Select Plan</a>
         </div>
       </div>
-      <div class="mt-6 flex items-center gap-4 bg-ember/[0.08] border border-ember/25 rounded-xl p-6">
-        <i data-lucide="gift" class="w-7 h-7 text-ember shrink-0"></i>
-        <p class="text-slate-200 text-sm"><span class="font-semibold text-white">New Student Offer —</span> Book your free trial class and experience Immortals before committing to a plan.</p>
-      </div>
     </div>
   </section>
 
-  <!-- ================= GALLERY ================= -->
-  <section class="py-24 bg-panel border-y border-line">
-    <div class="max-w-7xl mx-auto px-5 sm:px-8">
-      <div class="flex flex-wrap items-end justify-between gap-4 mb-12">
-        <div>
-          <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Gallery</span>
-          <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Inside Immortals</h2>
-        </div>
-        <a href="https://www.instagram.com/immortals_academy?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="text-ember font-semibold text-sm flex items-center gap-1.5 hover:underline bg-ember/10 border border-ember/25 px-3.5 py-2 rounded-lg">
-          <i data-lucide="instagram" class="w-4 h-4"></i> Follow @immortals_academy
-        </a>
-      </div>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        <div class="rounded-xl aspect-square overflow-hidden border border-line shadow-lg img-container">
-          <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=1000&q=80"
-            alt="Heavy bag striking area at Immortals Academy"
-            class="w-full h-full object-cover img-zoom">
-        </div>
-        <div class="rounded-xl aspect-square overflow-hidden border border-line shadow-lg img-container">
-          <img src="https://images.unsplash.com/photo-1555597673-b21d5c935865?auto=format&fit=crop&w=1000&q=80"
-            alt="Supervised kids Taekwondo &amp; martial arts class"
-            class="w-full h-full object-cover img-zoom">
-        </div>
-        <div class="rounded-xl aspect-square overflow-hidden border border-line shadow-lg img-container">
-          <img src="https://images.unsplash.com/photo-1509563839001-b549e77bfa31?auto=format&fit=crop&w=1000&q=80"
-            alt="Illuminated boxing &amp; spar ring at Immortals"
-            class="w-full h-full object-cover img-zoom">
-        </div>
-        <div class="rounded-xl aspect-square overflow-hidden border border-line shadow-lg img-container">
-          <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1000&q=80"
-            alt="Functional fitness &amp; hybrid kettlebell setup"
-            class="w-full h-full object-cover img-zoom">
-        </div>
-      </div>
-    </div>
   <!-- ================= FAQ SECTION ================= -->
-  <section id="faq" class="py-24 bg-panel border-b border-line">
+  <section id="faq" class="py-24 bg-panel border-y border-line">
     <div class="max-w-4xl mx-auto px-5 sm:px-8">
       <div class="text-center mb-14">
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Got Questions?</span>
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Questions &amp; Answers</span>
         <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3">Frequently Asked Questions</h2>
         <p class="mt-4 text-slate-400 text-sm">Everything you need to know about joining Immortals Academy.</p>
       </div>
 
       <div class="space-y-4" id="faqAccordion">
-        <!-- Question 1 -->
         <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
           <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
-            <span>Do I need any prior martial arts experience to join?</span>
+            <span>Who is the Founder and Head Coach of Immortals?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
-            Not at all! Over 80% of our new members start as complete beginners. Our coaches break down basic stance, footwork, and breathing techniques from Day 1 so you learn safely at your own pace.
+            Immortals is founded and led by Coach Rohan S — National Wushu Judge &amp; Coach, International Certified Personal Trainer, International Muay Thai &amp; Kickboxing Coach, and MMA Master Trainer with 14+ years of combat experience.
           </div>
         </div>
 
-        <!-- Question 2 -->
         <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
           <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
-            <span>What should I wear and bring for my free trial class?</span>
+            <span>Do I need any prior experience to start training?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
-            Wear comfortable gym workout clothes (t-shirt and shorts/trackpants) and bring a water bottle. All boxing gloves, striking pads, heavy bags, and mat equipment are provided free for your trial session!
+            No! Over 80% of our members start as complete beginners. Our coaches guide stance, breathing, and technique step-by-step in a safe environment.
           </div>
         </div>
 
-        <!-- Question 3 -->
         <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
           <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
-            <span>Are there dedicated batches for kids and younger students?</span>
+            <span>Where are the Immortals Academy branches located in Mangaluru?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
-            Yes! We run specialized kids' Taekwondo, Kung-Fu, and youth martial arts batches (ages 5–12) every weekday afternoon at 4:30 PM. These classes focus on discipline, anti-bullying self-defence, agility, and confidence building.
+            Our main branch is at Nethravathi Complex, Kapikad, Thokkottu. We also operate active centers in Urwastore, Kulshekar, and Padavinangady, as well as conducting programs in 15+ educational institutions across DK.
           </div>
         </div>
 
-        <!-- Question 4 -->
-        <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
-          <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
-            <span>Do you offer separate ladies or beginner-friendly options?</span>
-            <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
-          </button>
-          <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
-            Yes! We welcome women across all our Kickboxing, Boxing, and Hybrid Fitness batches. Our coaches ensure controlled, supportive partner work where safety and personal goals come first.
-          </div>
-        </div>
-
-        <!-- Question 5 -->
         <div class="bg-panel2 border border-line rounded-xl overflow-hidden">
           <button class="faq-btn w-full px-6 py-5 text-left flex items-center justify-between gap-4 font-semibold text-white hover:text-ember transition-colors">
             <span>How does the Free Trial Booking work?</span>
             <i data-lucide="chevron-down" class="w-5 h-5 text-ember transition-transform duration-200 shrink-0"></i>
           </button>
           <div class="faq-content hidden px-6 pb-5 text-slate-300 text-sm leading-relaxed border-t border-line/40 pt-3">
-            Simply fill out your name, phone number, and chosen discipline in the booking form below. Clicking the submit button opens a direct WhatsApp message to +91 720431 9094 where our team will confirm your batch time!
+            Simply submit your details in the booking form below or message us directly on WhatsApp at +91 720431 9094. All equipment is provided for your trial class!
           </div>
         </div>
       </div>
@@ -814,47 +1036,44 @@
   <section id="contact" class="py-24">
     <div class="max-w-7xl mx-auto px-5 sm:px-8 grid lg:grid-cols-2 gap-14">
       <div>
-        <span class="text-ember font-semibold text-xs tracking-[0.15em] uppercase">Location &amp; Contact</span>
-        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3 leading-[1.05]">Visit the Academy</h2>
-        <p class="mt-4 text-slate-400">Reach out directly on WhatsApp or call our helpline for enquiries, batch timings, and trial class bookings.</p>
+        <span class="text-ember font-semibold text-xs tracking-[0.18em] uppercase">Contact &amp; Location</span>
+        <h2 class="font-display font-semibold text-4xl sm:text-5xl text-white mt-3 leading-[1.05]">Visit Immortals Academy</h2>
+        <p class="mt-4 text-slate-400">Reach out directly on WhatsApp or call our helpline for batch timings and trial bookings.</p>
 
         <div class="mt-8 space-y-5">
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-lg bg-ember/15 flex items-center justify-center shrink-0"><i data-lucide="map-pin" class="w-5 h-5 text-ember"></i></div>
             <div>
-              <p class="text-white font-semibold text-sm">Head Office (Thokkottu)</p>
+              <p class="text-white font-semibold text-sm">Main Branch (Thokkottu)</p>
               <p class="text-slate-300 text-sm mt-0.5">Nethravathi Complex, Door No. 23-22A(6), 2nd Floor, Kapikad, Thokkottu, Ullal, Mangaluru, Karnataka 575020</p>
-              <p class="text-mute text-xs mt-1">Branch also active in <span class="text-white font-medium">Urwa, Mangaluru</span></p>
+              <p class="text-mute text-xs mt-1">Branches also in <span class="text-white font-medium">Urwastore, Kulshekar &amp; Padavinangady</span></p>
             </div>
           </div>
+
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-lg bg-ember/15 flex items-center justify-center shrink-0"><i data-lucide="phone" class="w-5 h-5 text-ember"></i></div>
             <div>
-              <p class="text-white font-semibold text-sm">Enquiry Helpline</p>
+              <p class="text-white font-semibold text-sm">Helpline &amp; WhatsApp</p>
               <a href="tel:+917204319094" class="text-ember font-semibold text-base hover:underline">+91 720431 9094</a>
             </div>
           </div>
+
           <div class="flex items-start gap-4">
             <div class="w-10 h-10 rounded-lg bg-ember/15 flex items-center justify-center shrink-0"><i data-lucide="clock" class="w-5 h-5 text-ember"></i></div>
             <div>
-              <p class="text-white font-semibold text-sm">Academy Hours</p>
-              <p class="text-slate-300 text-sm mt-0.5">Mon–Sat: 6:00 AM – 10:00 AM (Morning) · 4:00 PM – 10:00 PM (Evening)</p>
+              <p class="text-white font-semibold text-sm">Academy Operating Hours</p>
+              <p class="text-slate-300 text-sm mt-0.5">Mon–Sat: Morning 6:00 AM – 9:00 AM · Evening 4:00 PM – 10:00 PM</p>
             </div>
           </div>
         </div>
 
         <div class="mt-8 flex flex-wrap gap-3">
-          <a href="#contact" class="inline-flex items-center gap-2 bg-ember hover:bg-emberHover text-white text-sm font-semibold px-6 py-3.5 rounded-lg transition-colors shadow-lg shadow-ember/25">
-            <i data-lucide="calendar-check" class="w-4 h-4"></i> Book a Free Trial
+          <a href="https://wa.me/917204319094?text=Hi%20Immortals%20Academy,%20I'd%20like%20to%20inquire%20about%20a%20free%20trial%20class" target="_blank" rel="noopener" class="inline-flex items-center gap-2 bg-[#25D366] hover:bg-[#1EBE57] text-white text-sm font-semibold px-6 py-3.5 rounded-lg transition-colors shadow-lg shadow-[#25D366]/20">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> WhatsApp 7204319094
           </a>
-          <a href="https://wa.me/917204319094?text=Hi%20Immortals%20Academy,%20I'd%20like%20to%20inquire%20about%20a%20free%20trial%20class" target="_blank" rel="noopener" class="inline-flex items-center gap-2 border border-line hover:border-white/30 text-white text-sm font-semibold px-6 py-3.5 rounded-lg transition-colors bg-panel2/60">
-            <i data-lucide="message-circle" class="w-4 h-4 text-[#25D366]"></i> WhatsApp 7204319094
+          <a href="tel:+917204319094" class="inline-flex items-center gap-2 border border-line hover:border-white/30 text-white text-sm font-semibold px-6 py-3.5 rounded-lg transition-colors bg-panel2/60">
+            <i data-lucide="phone" class="w-4 h-4 text-ember"></i> Call Helpline
           </a>
-        </div>
-        <div class="mt-4 flex flex-wrap gap-x-6 gap-y-2 text-sm text-mute">
-          <a href="tel:+917204319094" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="phone" class="w-3.5 h-3.5 text-ember"></i> Call +91 720431 9094</a>
-          <a href="https://www.google.com/maps/search/?api=1&query=Nethravathi+Complex+Kapikad+Thokkottu+Mangaluru" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="navigation" class="w-3.5 h-3.5"></i> Get Directions</a>
-          <a href="https://www.instagram.com/immortals_academy?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="hover:text-white transition-colors flex items-center gap-1.5"><i data-lucide="instagram" class="w-3.5 h-3.5"></i> Instagram (@immortals_academy)</a>
         </div>
 
         <!-- Embedded Google Map -->
@@ -871,11 +1090,11 @@
       <!-- Booking Form -->
       <div class="bg-panel2 border border-line rounded-2xl p-7 sm:p-8 h-fit shadow-2xl relative">
         <h3 class="font-display font-semibold text-2xl text-white mb-2">Book Your Free Trial</h3>
-        <p class="text-slate-400 text-xs mb-6">No payment required. We will confirm your class timing via WhatsApp or call.</p>
+        <p class="text-slate-400 text-xs mb-6">No payment required. We will confirm your batch slot via WhatsApp.</p>
         
         <form id="trialForm" class="space-y-5">
           <div>
-            <label class="text-xs font-semibold text-mute uppercase tracking-wide">Name</label>
+            <label class="text-xs font-semibold text-mute uppercase tracking-wide">Full Name</label>
             <input type="text" id="trialName" required placeholder="Your full name" class="mt-2 w-full bg-ink border border-line rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-ember transition-colors">
           </div>
           <div>
@@ -883,34 +1102,30 @@
             <input type="tel" id="trialPhone" required placeholder="+91 720431 9094" class="mt-2 w-full bg-ink border border-line rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-ember transition-colors">
           </div>
           <div>
+            <label class="text-xs font-semibold text-mute uppercase tracking-wide">Preferred Branch</label>
+            <select id="trialBranch" class="mt-2 w-full bg-ink border border-line rounded-lg px-4 py-3 text-white focus:outline-none focus:border-ember transition-colors">
+              <option value="Thokkottu (Main Branch)">Thokkottu (Main Branch)</option>
+              <option value="Urwastore Branch">Urwastore Branch</option>
+              <option value="Kulshekar Branch">Kulshekar Branch</option>
+              <option value="Padavinangady Branch">Padavinangady Branch</option>
+            </select>
+          </div>
+          <div>
             <label class="text-xs font-semibold text-mute uppercase tracking-wide">Program Interested In</label>
             <select id="trialProgram" class="mt-2 w-full bg-ink border border-line rounded-lg px-4 py-3 text-white focus:outline-none focus:border-ember transition-colors">
-              <option value="Boxing">Boxing</option>
-              <option value="Kickboxing">Kickboxing</option>
+              <option value="Wushu">Wushu</option>
               <option value="Muay Thai">Muay Thai</option>
+              <option value="Kickboxing">Kickboxing</option>
+              <option value="Boxing">Boxing</option>
               <option value="MMA">MMA (Mixed Martial Arts)</option>
               <option value="Taekwondo">Taekwondo (Kids / Adults)</option>
               <option value="Kung-Fu">Kung-Fu</option>
-              <option value="Wushu">Wushu</option>
               <option value="Gym & Hybrid Fitness">Gym &amp; Hybrid Fitness</option>
             </select>
           </div>
           <div>
             <label class="text-xs font-semibold text-mute uppercase tracking-wide">Message / Preferred Time</label>
             <textarea id="trialMessage" rows="2" placeholder="Morning or evening batch preference..." class="mt-2 w-full bg-ink border border-line rounded-lg px-4 py-3 text-white placeholder-slate-600 focus:outline-none focus:border-ember transition-colors"></textarea>
-          </div>
-
-          <!-- What's included in Free Trial Box -->
-          <div class="bg-panel border border-ember/30 rounded-xl p-4 space-y-2.5 text-xs text-slate-300">
-            <h4 class="font-semibold text-ember uppercase tracking-wider flex items-center gap-1.5 text-[11px]">
-              <i data-lucide="sparkles" class="w-3.5 h-3.5"></i> What's Included in Your Free Trial:
-            </h4>
-            <ul class="space-y-1.5 text-slate-300">
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> <strong>45-60 Min Guided Class</strong> with a Head Coach</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> <strong>Equipment Provided:</strong> Gloves, pads &amp; heavy bags</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> <strong>No Gear Needed:</strong> Wear comfortable gym clothes</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-ember shrink-0"></i> <strong>Instant WhatsApp Confirmation:</strong> Call/WhatsApp 7204319094</li>
-            </ul>
           </div>
 
           <button type="submit" class="w-full bg-ember hover:bg-emberHover text-white font-semibold py-3.5 rounded-lg transition-colors shadow-lg shadow-ember/20 flex items-center justify-center gap-2">
@@ -921,55 +1136,49 @@
     </div>
   </section>
 
-  <!-- ================= FINAL CTA ================= -->
-  <section class="py-20 bg-panel border-t border-line">
-    <div class="max-w-4xl mx-auto px-5 sm:px-8 text-center">
-      <h2 class="font-display font-semibold text-3xl sm:text-4xl text-white">Ready to start training?</h2>
-      <p class="mt-3 text-slate-400">No experience required. Call <a href="tel:+917204319094" class="text-ember font-semibold hover:underline">7204319094</a> or book a free trial class to visit the academy.</p>
-      <a href="#contact" class="inline-flex items-center gap-2 mt-7 bg-ember hover:bg-emberHover text-white font-semibold px-8 py-4 rounded-lg transition-colors shadow-xl shadow-ember/25">
-        Book a Free Trial <i data-lucide="arrow-right" class="w-4 h-4"></i>
-      </a>
-    </div>
-  </section>
-
   <!-- ================= FOOTER ================= -->
   <footer class="bg-ink border-t border-line pt-14 pb-8">
     <div class="max-w-7xl mx-auto px-5 sm:px-8">
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
         <div>
           <div class="flex items-center gap-3">
-            <img src="images/Immortals.png" alt="Immortals Logo" class="w-10 h-10 object-contain">
+            <img src="images/Immortals.png" alt="Immortals Logo" class="w-11 h-11 object-contain drop-shadow-[0_0_10px_rgba(237,28,36,0.6)]">
             <span class="font-display font-extrabold text-xl tracking-wider text-white">IMMORTALS</span>
           </div>
-          <p class="text-mute text-sm mt-4">Martial arts and functional fitness training in Mangaluru (Thokkottu &amp; Urwa).</p>
+          <p class="text-mute text-sm mt-4 leading-relaxed">
+            Martial arts and functional fitness academy led by Founder &amp; Head Coach Rohan S. Branches in Thokkottu, Urwa, Kulshekar &amp; Padavinangady.
+          </p>
         </div>
         <div>
           <h4 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Explore</h4>
           <ul class="space-y-2 text-slate-400 text-sm">
-            <li><a href="#programs" class="hover:text-ember transition-colors">Programs</a></li>
+            <li><a href="#about" class="hover:text-ember transition-colors">Founder &amp; Story</a></li>
             <li><a href="#coaches" class="hover:text-ember transition-colors">Coaches</a></li>
-            <li><a href="#schedule" class="hover:text-ember transition-colors">Schedule</a></li>
-            <li><a href="#membership" class="hover:text-ember transition-colors">Membership</a></li>
+            <li><a href="#champions" class="hover:text-ember transition-colors">Wall of Champions</a></li>
+            <li><a href="#programs" class="hover:text-ember transition-colors">Programs</a></li>
+            <li><a href="#schedule" class="hover:text-ember transition-colors">Branch Schedule</a></li>
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">More</h4>
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Branches</h4>
           <ul class="space-y-2 text-slate-400 text-sm">
-            <li><a href="#reviews" class="hover:text-ember transition-colors">Reviews</a></li>
-            <li><a href="#contact" class="hover:text-ember transition-colors">Location</a></li>
-            <li><a href="tel:+917204319094" class="hover:text-ember transition-colors">Call 7204319094</a></li>
+            <li><span class="text-white font-medium">Thokkottu</span> (Main HQ)</li>
+            <li><span class="text-white font-medium">Urwastore</span> Branch</li>
+            <li><span class="text-white font-medium">Kulshekar</span> Branch</li>
+            <li><span class="text-white font-medium">Padavinangady</span> Branch</li>
           </ul>
         </div>
         <div>
-          <h4 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Find Us</h4>
-          <p class="text-slate-400 text-sm">Thokkottu, Ullal, Mangaluru, Karnataka 575020</p>
-          <a href="https://www.instagram.com/immortals_academy?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank" rel="noopener" class="inline-flex items-center gap-2 text-ember text-sm font-semibold mt-3 hover:underline">
-            <i data-lucide="instagram" class="w-4 h-4"></i> @immortals_academy
+          <h4 class="text-white font-semibold text-sm uppercase tracking-wide mb-4">Contact</h4>
+          <p class="text-slate-400 text-sm">Kapikad, Thokkottu, Mangaluru 575020</p>
+          <a href="tel:+917204319094" class="block text-ember text-sm font-semibold mt-2 hover:underline">+91 720431 9094</a>
+          <a href="https://www.instagram.com/immortals_academy" target="_blank" rel="noopener" class="inline-flex items-center gap-1.5 text-slate-300 text-xs mt-3 hover:text-ember">
+            <i data-lucide="instagram" class="w-3.5 h-3.5"></i> @immortals_academy
           </a>
         </div>
       </div>
       <div class="border-t border-line mt-10 pt-6 text-center text-mute text-xs">
-        © <span id="year"></span> Immortals - Martial Arts & Fitness Academy. All Rights Reserved.
+        © <span id="year"></span> Immortals Martial Arts &amp; Fitness Academy. All Rights Reserved.
       </div>
     </div>
   </footer>
@@ -983,45 +1192,59 @@
     <i data-lucide="message-circle" class="w-7 h-7 text-white"></i>
   </a>
 
-  <!-- Back To Top Floating Button -->
+  <!-- Back To Top Button -->
   <button id="backToTop" 
           aria-label="Back to Top" 
-          class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-panel border border-ember/40 text-ember hidden opacity-0 transition-all duration-300 items-center justify-center shadow-xl hover:bg-ember hover:text-white">
+          class="fixed bottom-6 left-6 z-50 w-12 h-12 rounded-full bg-panel border border-ember/40 text-ember hidden opacity-0 transition-all duration-300 flex items-center justify-center shadow-xl hover:bg-ember hover:text-white">
     <i data-lucide="chevron-up" class="w-6 h-6"></i>
   </button>
 
-  <!-- Success Toast Notification -->
-  <div id="toast" class="fixed top-20 right-6 z-50 transform translate-x-72 opacity-0 transition-all duration-300 max-w-sm bg-panel border border-ember rounded-xl p-4 shadow-2xl flex items-start gap-3">
-    <div class="w-8 h-8 rounded-full bg-ember/20 text-ember flex items-center justify-center shrink-0 mt-0.5">
-      <i data-lucide="check-circle" class="w-5 h-5"></i>
-    </div>
-    <div>
-      <h5 class="text-white font-semibold text-sm">Free Trial Request Sent!</h5>
-      <p id="toastMessage" class="text-slate-300 text-xs mt-1">Redirecting to WhatsApp to confirm your batch time...</p>
-    </div>
-  </div>
-
   <script>
     lucide.createIcons();
-    
-    // Mobile Menu Toggle & Auto-Close
-    const menuBtn = document.getElementById('menuBtn');
-    const mobileMenu = document.getElementById('mobileMenu');
-    
-    menuBtn.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
+
+    // Branch Timetable Switcher Logic
+    function switchBranch(branchKey) {
+      document.querySelectorAll('.branch-panel').forEach(panel => panel.classList.add('hidden'));
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('tab-active');
+        btn.classList.add('bg-panel2', 'text-slate-300');
+      });
+
+      const selectedPanel = document.getElementById('branch-' + branchKey);
+      const selectedTab = document.getElementById('tab-' + branchKey);
+
+      if (selectedPanel && selectedTab) {
+        selectedPanel.classList.remove('hidden');
+        selectedTab.classList.add('tab-active');
+        selectedTab.classList.remove('bg-panel2', 'text-slate-300');
+      }
+    }
+
+    // FAQ Collapsible Logic
+    document.querySelectorAll('.faq-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('i');
+        
+        content.classList.toggle('hidden');
+        if (icon) {
+          icon.style.transform = content.classList.contains('hidden') ? 'rotate(0deg)' : 'rotate(180deg)';
+        }
+      });
     });
 
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
     document.querySelectorAll('.mobile-link').forEach(link => {
-      link.addEventListener('click', () => {
-        mobileMenu.classList.add('hidden');
-      });
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
     });
 
     // Dynamic Year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // Back to Top Button Logic
+    // Back to Top Button
     const backToTopBtn = document.getElementById('backToTop');
     window.addEventListener('scroll', () => {
       if (window.scrollY > 300) {
@@ -1032,38 +1255,22 @@
         setTimeout(() => backToTopBtn.classList.add('hidden'), 300);
       }
     });
+    backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 
-    backToTopBtn.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-    });
-
-    // Trial Booking Form Submission
+    // Trial Form Submission
     const trialForm = document.getElementById('trialForm');
-    const toast = document.getElementById('toast');
-    const toastMessage = document.getElementById('toastMessage');
-
     trialForm.addEventListener('submit', (e) => {
       e.preventDefault();
       const name = document.getElementById('trialName').value.trim();
       const phone = document.getElementById('trialPhone').value.trim();
+      const branch = document.getElementById('trialBranch').value;
       const program = document.getElementById('trialProgram').value;
       const message = document.getElementById('trialMessage').value.trim();
 
-      // Show toast
-      toastMessage.textContent = `Thanks ${name}! Opening WhatsApp to confirm your ${program} trial...`;
-      toast.classList.remove('translate-x-72', 'opacity-0');
-      toast.classList.add('translate-x-0', 'opacity-100');
-
-      // Build WhatsApp message URL
-      const text = encodeURIComponent(`Hi Immortals Academy,\nMy name is ${name} (${phone}).\nI would like to book a free trial class for ${program}.\n${message ? 'Notes: ' + message : ''}`);
+      const text = encodeURIComponent(`Hi Immortals Academy,\nMy name is ${name} (${phone}).\nI would like to book a free trial class for ${program} at your ${branch}.\n${message ? 'Notes: ' + message : ''}`);
       const waUrl = `https://wa.me/917204319094?text=${text}`;
-
-      setTimeout(() => {
-        window.open(waUrl, '_blank');
-        toast.classList.remove('translate-x-0', 'opacity-100');
-        toast.classList.add('translate-x-72', 'opacity-0');
-        trialForm.reset();
-      }, 1800);
+      window.open(waUrl, '_blank');
+      trialForm.reset();
     });
   </script>
 </body>
