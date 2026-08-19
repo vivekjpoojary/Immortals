@@ -1,6 +1,11 @@
 # 🐉 Immortals - Martial Arts & Fitness Academy
 
+[![GitHub Pages Deployment](https://github.com/vivekjpoojary/Immortals/actions/workflows/deploy.yml/badge.svg)](https://vivekjpoojary.github.io/Immortals/)
+[![Website](https://img.shields.io/badge/Website-Live%20Demo-red.svg)](https://vivekjpoojary.github.io/Immortals/)
+
 Official website repository for **Immortals Martial Arts & Fitness Academy** — Mangaluru's premier combat sports and functional training academy.
+
+🌐 **Live Website:** [https://vivekjpoojary.github.io/Immortals/](https://vivekjpoojary.github.io/Immortals/)
 
 ![Immortals Academy Banner](images/Immortals.png)
 
