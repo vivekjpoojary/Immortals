@@ -80,6 +80,24 @@ Founded on **January 1, 2021** in Mangaluru, Immortals was created to build comb
 
 ---
 
+## 📁 Repository Structure
+
+```text
+Immortals/
+├── .github/
+│   ├── ISSUE_TEMPLATE/       # GitHub issue reporting templates
+│   ├── workflows/deploy.yml  # GitHub Pages deployment automation
+│   └── PULL_REQUEST_TEMPLATE.md
+├── images/                   # High-res logos, banners, & favicon assets
+├── index.html                # Main single-page web app source
+├── manifest.json             # Web App Manifest PWA configuration
+├── README.md                 # Project documentation & academy profile
+├── CONTRIBUTING.md           # Developer guidelines & pull request checklist
+└── SECURITY.md               # Security disclosure policy & SLAs
+```
+
+---
+
 ## 🚀 Quick Start (Local Setup)
 
 Simply open `index.html` in any web browser:
