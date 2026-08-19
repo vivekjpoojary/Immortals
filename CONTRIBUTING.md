@@ -27,6 +27,11 @@ Thank you for contributing to the official website repository for **Immortals Ma
    git push origin feature/your-feature-name
    ```
 
+4. **Pull Request Checklist:**
+   - [ ] Tested layout on mobile, tablet, and desktop viewports.
+   - [ ] Verified all contact links (Call, WhatsApp, Maps, Instagram) function properly.
+   - [ ] Passed HTML/CSS validation with zero console errors.
+
 ---
 
 Thank you for helping keep Immortals Academy web experience state-of-the-art!
