@@ -19,6 +19,12 @@ Examples of behavior that contributes to a positive environment for our communit
 
 This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces.
 
+## Martial Arts Code of Respect & Discipline
+
+In alignment with Immortals Martial Arts & Fitness Academy values:
+- **Respect All Athletes & Coaches:** Honor training partners, competitors, and community members both on and off the mat.
+- **Continuous Improvement (Kaizen):** Welcome constructive critique to build martial excellence and mental fortitude.
+
 ## Enforcement
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the project leaders responsible for enforcement at `vivekjpoojary@gmail.com`. All complaints will be reviewed and investigated promptly and fairly.
