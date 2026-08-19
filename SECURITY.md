@@ -14,4 +14,9 @@ If you discover a security vulnerability or web application security issue, plea
 - 💬 **WhatsApp:** `+91 720431 9094`
 - 📸 **Instagram:** [@immortals_academy](https://www.instagram.com/immortals_academy)
 
-We appreciate responsible disclosure and aim to review all security reports within 24 hours.
+We appreciate responsible disclosure and aim to acknowledge all security reports within 24 hours and issue resolution patches within 48 hours.
+
+### Security Response Commitment
+- **Initial Response:** Within 24 hours
+- **Patch Deployment:** Within 48 hours of verification
+- **Scope:** Web application layout, form security, data privacy, and hosting configuration.
