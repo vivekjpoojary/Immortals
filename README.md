@@ -71,6 +71,15 @@ Founded on **January 1, 2021** in Mangaluru, Immortals was created to build comb
 
 ---
 
+## 🥊 Training Gear & Trial Class Checklist
+
+- 👟 **Comfortable Sportswear** (Breathable t-shirt and shorts/track pants)
+- 💧 **Personal Water Bottle** (Hydration support during high-intensity drills)
+- 🧘 **Hand Wraps / Gloves** (Provided for trial sessions; mandatory for regular striking practice)
+- 🏬 **Clean Indoor Footwear or Barefoot** (Depending on mat surface area)
+
+---
+
 ## 🚀 Quick Start (Local Setup)
 
 Simply open `index.html` in any web browser:
