@@ -6,11 +6,20 @@
   "display": "standalone",
   "background_color": "#090C11",
   "theme_color": "#ED1C24",
+  "categories": ["fitness", "sports", "health"],
   "icons": [
     {
       "src": "images/Immortals.png",
       "sizes": "192x192 512x512",
       "type": "image/png"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Book Trial Class",
+      "short_name": "Trial",
+      "description": "Book a free trial martial arts class via WhatsApp",
+      "url": "https://wa.me/917204319094"
     }
   ]
 }
